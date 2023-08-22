@@ -1,0 +1,184 @@
+nav{
+    background-color: #D0A7BB !important;
+}
+
+.search_nav{
+    border-radius: 30px;
+    border: 3px solid #271520 !important;
+    font-weight: 600;
+    padding: 8px 0 8px 40px !important;
+    background-color: #D0A7BB;
+    padding: 10px;
+    margin-top: 2px;
+    margin-right: 10px !important;
+    padding-right: 110px !important;
+}
+
+.icon_search {
+    color: #271520;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    left: 30px;
+  }
+
+.search_nav::placeholder {
+    font-size: 14px;   /* Define o tamanho da fonte do placeholder */
+    color: #271520;    /* Define a cor do texto do placeholder */
+  }
+input{
+    padding: 8px 0 8px 32px;
+}
+.btn-search{
+    background-color: #271520;
+    color: #EBCEE0;
+    margin-right: 4rem;
+}
+.btn-search:hover{
+    border: 3px solid #271520;
+}
+
+.btn-main{
+    background-color: #271520;
+    color: #EBCEE0;
+}
+.btn-main:hover{
+    border: 3px solid #271520;
+}
+
+.icon_person{
+    padding: 12px;
+    margin-top: 2px;
+    background-color: #271520;
+    color: white;
+    border-radius: 100%;
+}
+
+.space{
+    margin-right: 2rem;
+}
+/* Estilos para o novo navbar */
+.sidebar {
+    position: fixed; /* Mantém o navbar fixo na tela */
+    top: 0; /* Alinha o topo do navbar com o topo da tela */
+    left: 0; /* Alinha a esquerda do navbar com a esquerda da tela */
+    width: 205px; /* Define a largura do navbar */
+    height: 100%; /* Define a altura do navbar */
+    background-color: #271520; /* Cor de fundo */
+    color: #D0A7BB;
+    overflow-y: auto; /* Adiciona scroll vertical se necessário */
+}
+
+/* Estilos para os itens do novo navbar */
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.sidebar-icon {
+    font-size: 24px;
+    margin-right: 10px;
+    
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: #271520 !important;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 50px 10px 15px !important;
+}
+
+.nav-link:hover{
+    background-color: #271520 !important;
+    color: #D0A7BB !important;
+}
+.nav-link:focus {
+    background-color: #271520;
+    color: #D0A7BB !important;
+    text-decoration: none;
+    
+    margin-top: 20px;
+    padding: 10px 50px 10px 15px !important;
+    
+}
+
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 205px;
+    height: 100%;
+    color: white;
+    overflow-y: none;
+}
+
+.sidebar .logo {
+    display: block;
+    margin: 20px auto;
+    position: absolute;
+    top: 0;
+    width: 12rem;
+    height: auto;
+}
+
+/* Estilos para os itens do novo navbar */
+.sidebar-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 25px;
+    transition: background-color 0.2s;
+}
+.nav-link:hover {
+    background-color: #D0A7BB;
+}
+
+.nav-user{
+    display: flex;
+    align-items: center;
+    color: #271520;
+    text-decoration: none !important;
+    padding: 10px;
+    transition: background-color 0.2s;
+}
+
+.nav-user:hover {
+    color: #271520;
+}
+
+/* Estilos para o outro navbar */
+.another-navbar {
+    position: fixed;
+    top: 0;
+    right: 0; /* Ajustar a posição para a direita */
+    width: calc(100% - 205px); /* Subtrair a largura do novo navbar */
+    height: 60px;
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
+/* Estilos para os itens do outro navbar */
+.another-navbar-list {
+    display: flex;
+    justify-content: flex-end; /* Alinhar à direita */
+    align-items: center;
+    height: 100%;
+    margin-right: 20px; /* Espaçamento direito */
+}

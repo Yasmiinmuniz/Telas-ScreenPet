@@ -1,0 +1,122 @@
+/* Importar a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Definindo o estilo para o elemento <body> da página */
+body {
+  /* Definindo a imagem de plano de fundo */
+  background-image: url("wallpaper.png"); 
+  /* Impedindo a repetição da imagem de plano de fundo */
+  background-repeat: no-repeat;
+  /* Dimensionando a imagem de plano de fundo para cobrir todo o elemento */
+  background-size: cover;
+}
+
+
+.headline {
+    font-size: 50px;
+    font-weight: 600;
+    color: #9F5C86;
+    font-weight: bold; /* negrito */
+  }
+  
+  .subheadline {
+    margin-top: 10px; /* A margem superior */
+    font-size: 24px;
+    font-weight: 400;
+    color: #9F5C86;
+  }
+  
+  .form {
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 16px;
+  }
+  
+  .input-email {
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 8px 0 8px 32px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+  }
+  
+  .input-password {
+    width: 100%;
+    padding: 8px 0 8px 32px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Adicione a margem inferior */
+  }
+  
+  .label-email {
+    margin: 0 0 -12px 0;
+    color: #9F5C86;
+    font-weight: 600;
+  }
+  
+  .label-password {
+    margin: 0 0 -12px 0;
+    color: #9F5C86;
+    font-weight: 600;
+  }
+  
+  iconify-icon {
+    color: #9F5C86;
+    font-size: 16px;
+    position: relative; /* Adicione esta propriedade */
+    top: 40px; /* Ajuste a posição vertical conforme necessário */
+    left: 10px; /* Ajuste a posição horizontal conforme necessário */
+  }
+  
+  
+/* Define o estilo do texto de placeholder no campo de e-mail */
+.input-email::placeholder {
+  font-size: 14px;   /* Define o tamanho da fonte do placeholder */
+  color: #9F5C86;    /* Define a cor do texto do placeholder */
+}
+
+/*Estilo do texto de placeholder no campo de senha */
+.input-password::placeholder {
+  font-size: 14px;   /* Tamanho da fonte do placeholder */
+  color: #9F5C86;    /* Cor do texto do placeholder */
+}
+
+.btn-entrar {
+    width: 100%;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: #9F5C86;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px; /* A margem superior */
+    border: none;
+}
+
+/* Estilo para a div que envolve o botão Entrar e o link Esqueceu a senha */
+.login-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn-entrar:hover{
+    background-color: #271520;
+}
+
+.forgot{
+  text-align: center;
+  text-decoration: none;
+  color: #9F5C86;
+  display: flex;
+  cursor: pointer;
+  margin-top: 10px;
+  justify-content: center;
+}
+.forgot:hover{
+    color: #271520;
+}
