@@ -2,6 +2,17 @@ nav{
     background-color: #D0A7BB !important;
 }
 
+/* Definindo o estilo para o elemento <body> da página */
+body {
+    /* Definindo a imagem de plano de fundo */
+    background-image: url("../TelaBase/wallpaper.png"); 
+    /* Impedindo a repetição da imagem de plano de fundo */
+    background-repeat: no-repeat;
+    /* Dimensionando a imagem de plano de fundo para cobrir todo o elemento */
+    background-size: cover;
+  }
+
+  /* Definindo o estilo para o elemento <search_nav> da página */
 .search_nav{
     border-radius: 30px;
     border: 3px solid #271520 !important;
@@ -57,7 +68,7 @@ input{
 .space{
     margin-right: 2rem;
 }
-/* Estilos para o novo navbar */
+/* Estilos para a navbar lateral */
 .sidebar {
     position: fixed; /* Mantém o navbar fixo na tela */
     top: 0; /* Alinha o topo do navbar com o topo da tela */
@@ -69,7 +80,7 @@ input{
     overflow-y: auto; /* Adiciona scroll vertical se necessário */
 }
 
-/* Estilos para os itens do novo navbar */
+/* Estilos para os itens da navbar lateral */
 .sidebar-list {
     list-style-type: none;
     padding: 0;
@@ -105,9 +116,6 @@ input{
     
 }
 
-
-
-
 .sidebar {
     position: fixed;
     top: 0;
@@ -127,7 +135,6 @@ input{
     height: auto;
 }
 
-/* Estilos para os itens do novo navbar */
 .sidebar-list {
     list-style-type: none;
     padding: 0;
@@ -163,7 +170,7 @@ input{
     color: #271520;
 }
 
-/* Estilos para o outro navbar */
+/* Estilos para o outro navbar (o de cima) */
 .another-navbar {
     position: fixed;
     top: 0;
@@ -174,7 +181,7 @@ input{
     color: white;
 }
 
-/* Estilos para os itens do outro navbar */
+/* Estilos para os itens do outro navbar (o de cima) */
 .another-navbar-list {
     display: flex;
     justify-content: flex-end; /* Alinhar à direita */
