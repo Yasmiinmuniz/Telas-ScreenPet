@@ -1,0 +1,184 @@
+
+
+.container{
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.vh-100 {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_search {
+    color: #271520;
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    left: 30px;
+  }
+
+.titulo {
+    
+    text-align: center;
+    font-size: 30px;
+    align-self: center;
+    color: #271520;
+    font-weight: bold; /* negrito */
+}
+
+.btn-search{
+    display: flex;
+    background-color: #271520;
+    color: #EBCEE0;
+    margin-right: 4rem;
+}
+  
+.btn-main{
+    background-color: #271520;
+    color: #EBCEE0;
+}
+  
+.space{
+    margin-right: 2rem;
+}
+
+.registerTutor-container {
+    display: flex;
+}
+
+.registerTutor-name {
+    width: 50%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-top: 2px;
+    margin-right: 20px;
+}
+
+.registerTutor-cpf {
+    width: 25%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.registerTutor-contato {
+    width: 25%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.registerTutor-cep {
+    width: 15%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.registerTutor-address {
+    width: 70%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.registerTutor-number {
+    width: 15%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.registerTutor-complement {
+    width: 25%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.registerTutor-state {
+    width: 15%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.registerTutor-city {
+    width: 25%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.registerTutor-neighborhood {
+    width: 25%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 5px 10px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.address{
+    display: flex;
+    width: 100%;
+}
+
+.text {
+    color: #271520;
+    font-weight: bold; /* negrito */
+}
+
+.internsObservations{
+    width: 100%;
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 5px 0 40px 40px;
+    background-color: #D0A7BB;
+    margin-right: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 20px; /* Ajuste conforme necessário */
+    margin-bottom: 30px; /* Espaçamento extra entre botões e conteúdo */
+}
+
+.button-input{
+    border-radius: 30px;
+    border: 3px solid #271520;
+    font-weight: 600;
+    padding: 8px 0 8px 40px;
+    background-color: #D0A7BB;
+    padding: 10px;
+    margin-top: 2px;
+    margin-right: 10px;
+    padding-right: 110px;
+}

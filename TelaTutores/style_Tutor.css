@@ -1,0 +1,87 @@
+body {
+  /* Definindo a imagem de plano de fundo */
+  background-image: url("../TelaTutores/wallpaper.png"); 
+  /* Impedindo a repetição da imagem de plano de fundo */
+  background-repeat: no-repeat;
+  /* Dimensionando a imagem de plano de fundo para cobrir todo o elemento */
+  background-size: cover;
+}
+
+.headline {
+  font-size: 50px;
+  font-weight: 600;
+  color: #271520;
+  font-weight: bold; /* negrito */
+}
+
+.search_nav {
+  flex: 0.4;
+  width: 40%; /* Defina a largura desejada, como 40% */
+  margin-right: 10px;
+  background-color: transparent;
+  border: 3px solid #271520; /* Adiciona uma borda de cor e largura especificadas */
+  padding: 8px; /* Adicione um espaçamento interno para a borda */
+}
+
+iconify-icon {
+  color: #271520;
+  font-size: 16px;
+  position: relative; /* Adicione esta propriedade */
+  top: 3px; /* Ajuste a posição vertical conforme necessário */
+  left: 450px; /* Ajuste a posição horizontal conforme necessário */
+}
+
+.button-cadastro{
+  background-color: #271520;
+  color: #EBCEE0;
+}
+
+.btn-search{
+  display: flex;
+  background-color: #271520;
+  color: #EBCEE0;
+  margin-right: 4rem;
+}
+
+.btn-main{
+  background-color: #271520;
+  color: #EBCEE0;
+}
+
+.space{
+  margin-right: 2rem;
+}
+
+.linha-divisoria {
+  width: 100%;
+  border-bottom: 3px solid #271520;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container-buscaCadastro{
+  display: flex;
+  align-items: center;
+  
+  margin-top: 20px; /* Ajuste o espaçamento superior conforme necessário */
+}
+
+.text {
+  margin-right: 10px; /* Adicione um espaçamento à direita */
+  color: #271520;
+  font-weight: bold;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Adicione um espaçamento inferior */
+}
+
+.bordered-text {
+  border: 4px solid #271520; /* Adiciona uma borda de cor e largura especificadas */
+  padding: 8px; /* Adicione um espaçamento interno para a borda */
+  color: #271520;
+  font-weight: bold;
+}
