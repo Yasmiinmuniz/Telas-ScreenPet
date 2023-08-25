@@ -62,7 +62,6 @@ iconify-icon {
 .container-buscaCadastro{
   display: flex;
   align-items: center;
-  
   margin-top: 20px; /* Ajuste o espaçamento superior conforme necessário */
 }
 
@@ -70,6 +69,7 @@ iconify-icon {
   margin-right: 10px; /* Adicione um espaçamento à direita */
   color: #271520;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .text-container {
@@ -79,9 +79,37 @@ iconify-icon {
   margin-bottom: 10px; /* Adicione um espaçamento inferior */
 }
 
+.borderContainer {
+  display: flex;
+  align-items: center; /* Alinhar verticalmente */
+}
+
 .bordered-text {
-  border: 4px solid #271520; /* Adiciona uma borda de cor e largura especificadas */
-  padding: 8px; /* Adicione um espaçamento interno para a borda */
+  border: 4px solid #271520;
+  padding: 8px;
   color: #271520;
   font-weight: bold;
+  margin-right: 30px;
+}
+
+.custom-button {
+  background: transparent;
+  border: 2px dashed black;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column; /* Alterar a direção do flex para empilhar os elementos verticalmente */
+  align-items: center;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.custom-button iconify-icon {
+  margin-right: 5px;
+  position:static;
+  top: -3px;
+}
+
+.cadastroNewPet{
+  justify-content: center;
+  align-content: center;
 }
