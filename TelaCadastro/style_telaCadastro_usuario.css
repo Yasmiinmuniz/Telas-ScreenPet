@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../IMG/wallpaper.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+      }
+      
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBCEE0;
+    padding: 3rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-button button a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #9F5C86;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.crmv-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 80px;
+    height: 50px; 
+    padding: 0 10px;
+    border-radius: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+}
+
+.input-box input:hover {
+    background-color: white;
+}
+
+.input-box input:focus-visible {
+    outline: 1px solid #9F5C86;
+}
+
+.input-box label,
+.access-title h6 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #271520;
+}
+
+.input-box input::placeholder {
+    color: #000000be;
+}
+
+.access-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.access-input {
+    display: flex;
+    align-items: center;
+}
+
+.access-input input {
+    margin-right: 0.35rem;
+}
+
+.access-input label {
+    font-size: 0.81rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.register-button button {
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #9F5C86;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button button:hover {
+    background-color: #9F5C86;
+}
+
+.register-button button a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}
