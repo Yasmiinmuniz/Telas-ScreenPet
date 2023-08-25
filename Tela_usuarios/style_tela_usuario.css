@@ -1,0 +1,32 @@
+.cabecalho th {
+    color: #fff;
+    background-color: #271520 !important;
+    margin-bottom: 50px;
+    padding: 25px;
+}
+
+.corpo td {
+    padding: 25px;
+}
+
+.btn-cor_principal {
+    background-color: #9F5C86;
+    color: #fff;
+}
+
+.btn-cor_principal:hover {
+    background-color: #6B3E5B;
+    color: #fff;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.label-pesquisa {
+    color: #fff;
+    background-color: #271520;
+    padding: 10px;
+    margin: 0;
+
+}

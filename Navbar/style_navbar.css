@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: poppins, sans-serif;
+    font-family: 'poppins', sans-serif;
     background-image: url("../Navbar/wallpaper.png"); 
     background-color: #E9E9E9;
     overflow-x: hidden;
@@ -66,6 +66,12 @@ body {
     color: #CFA5BA !important;
     border-radius: 100% !important;
     font-size: 24px
+}
+
+.dropdown-menu{
+    background-color: #A97F95;
+    position: absolute;
+    margin-left: -60%;
 }
 
 .drop_user{
