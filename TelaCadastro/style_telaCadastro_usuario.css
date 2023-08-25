@@ -1,31 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
+.form-container {
+    margin: 0 auto;
+    max-width: 80%;
+    /* Definindo 80% de largura */
+    padding: 20px;
 }
 
-body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../IMG/wallpaper.png"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-      }
-      
 .form {
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background-color: #EBCEE0;
-    padding: 3rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    margin: auto;
+    max-width: 95%;
+    padding: 30px;
+    flex-direction: column;
 }
 
 .form-header {
@@ -69,7 +59,7 @@ body {
     flex-direction: column;
     margin-bottom: 1rem;
     width: 80px;
-    height: 50px; 
+    height: 50px;
     padding: 0 10px;
     border-radius: 30%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

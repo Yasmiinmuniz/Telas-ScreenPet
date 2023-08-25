@@ -2,14 +2,17 @@
 
 .navbar{
     background-color: #CFA5BA !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 body {
     font-family: poppins, sans-serif;
     background-image: url("../Navbar/wallpaper.png"); 
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #E9E9E9;
     overflow-x: hidden;
+    padding-top: 75px;
   }
 
 .logo{
@@ -17,12 +20,13 @@ body {
 }
 
 .sidebar-icon {
-    font-size: 24px !important;
+    font-size: 20px !important;
     margin-right: 10px !important;
     
 }
 
 .nav-link{
+    font-size: 15px;
     display: flex !important;
     align-items: center !important;
     color: #271520 !important;
