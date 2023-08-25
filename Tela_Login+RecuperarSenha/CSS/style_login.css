@@ -3,11 +3,8 @@
 
 /* Definindo o estilo para o elemento <body> da página */
 body {
-  /* Definindo a imagem de plano de fundo */
   background-image: url("../"); 
-  /* Impedindo a repetição da imagem de plano de fundo */
   background-repeat: no-repeat;
-  /* Dimensionando a imagem de plano de fundo para cobrir todo o elemento */
   background-size: cover;
 }
 

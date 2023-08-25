@@ -1,13 +1,24 @@
 /* resovendo alinhamento do calendario */
 
-.content-align{
-    display: flex;
-    align-items: start;
+.navbar{
+    background-color: #CFA5BA !important;
+}
+
+body {
+    background-image: url("../IMG/wallpaper.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+  
+  .content-align{
+    display: flex !important;
+    align-items: normal !important;
 
 }
 
 .ftco-section{
-    flex: 1;
-    margin-top: 40px;
-    padding: 0;
+    flex: 1 !important;
+    margin-top: 25px !important;
+    padding: 0 !important;
 }
