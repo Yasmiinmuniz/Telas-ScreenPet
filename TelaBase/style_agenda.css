@@ -1,0 +1,40 @@
+<style>
+    /* Estilos para a div .calendar-container */
+    .calendar-container {
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    /* Estilos para os meses */
+    .months-table {
+        width: 100%;
+        text-align: center;
+        background-color: #D0A7BB;
+    }
+
+    .months-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .month {
+        padding: 10px;
+    }
+
+    /* Estilos para os dias */
+    .days-table {
+        width: 100%;
+        text-align: center;
+        background-color: #D0A7BB;
+    }
+
+    .day {
+        padding: 10px;
+    }
+
+    /* Estilos para o frame das datas */

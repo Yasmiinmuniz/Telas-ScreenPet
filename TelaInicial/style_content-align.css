@@ -1,0 +1,13 @@
+/* resovendo alinhamento do calendario */
+
+.content-align{
+    display: flex;
+    align-items: start;
+
+}
+
+.ftco-section{
+    flex: 1;
+    margin-top: 40px;
+    padding: 0;
+}

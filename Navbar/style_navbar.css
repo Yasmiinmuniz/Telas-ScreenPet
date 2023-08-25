@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 .navbar{
-    background-color: #D0A7BB !important;
+    background-color: #CFA5BA !important;
 }
 
 body {
     font-family: poppins, sans-serif;
-    /* Definindo a imagem de plano de fundo */
-    background-image: url("../TelaBase/wallpaper.png"); 
-    /* Impedindo a repetição da imagem de plano de fundo */
+    background-image: url("../Navbar/wallpaper.png"); 
     background-repeat: no-repeat;
-    /* Dimensionando a imagem de plano de fundo para cobrir todo o elemento */
     background-size: cover;
     overflow-x: hidden;
   }
@@ -62,11 +59,49 @@ body {
     padding: 12px !important;
     margin-bottom: 10px !important;
     background-color: #271520 !important;
-    color: white !important;
+    color: #CFA5BA !important;
     border-radius: 100% !important;
+    font-size: 24px
 }
+
 .drop_user{
     margin-left: 2rem !important;
-    padding-left: 2rem !important;
-    border-left: 1px solid #000 !important;
+    padding-left: 4rem !important;
+}
+
+@media (max-width: 768px) {
+    .drop_user {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        border-left: none !important;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin: 5px 12px;
+    }
+
+    .navbar-toggler {
+        order: -1;
+        margin-left: auto;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo {
+        width: 200px;
+        transition: width 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
 }
