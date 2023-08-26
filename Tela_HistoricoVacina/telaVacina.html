@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_telaHistoricoVacina.css">
+    <link rel="stylesheet" href="../Navbar/style_navbar.css">
+
+    <title>Vacinas</title>
+</head>
+
+<body>
+
+    <div class="vh-100">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-container" href="#">
+                    <img class="logo" src="../Navbar/ScreenPet.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="clarity:home-solid"></iconify-icon>
+                                Início
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="mdi:account"></iconify-icon>
+                                Vacinas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="mdi:paw"></iconify-icon>
+                                Pets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="healthicons:syringe-vaccine"></iconify-icon>
+                                Vacinas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="mdi:pill"></iconify-icon>
+                                Medicamentos
+                            </a>
+                        </li>
+                        <li class="drop_user d-flex flex-fill nav-item">
+                            <iconify-icon class="icon_person" icon="ic:round-person" flip="horizontal"></iconify-icon>
+                            <div class="nav-item dropdown">
+                                <a class="nav-user dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Usuário
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                    <a class="dropdown-item" style="margin-top: 15px;" href="#">Configurações</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Sair</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+<!-- Cadastrar Vacina -->
+        <div class="modal fade" id="ModalVacina" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header btn-cor_principal">
+                        <h5 class="modal-title" id="ModalVacinaTitle">Cadastrar Vacina</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="background-image: url(../IMG/wallpaper.png);">
+                        <form>
+                            <div class="form-row pb-3">
+                                <div class="col-md-6">
+                                    <label for="nome">Nome</label>
+                                    <input type="text" class="form-control input-form" id="nome" placeholder="Digite o nome"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="type">Tipo</label>
+                                    <input type="text" class="form-control input-form" id="type" placeholder="Digite o tipo de vacina" required>
+                                </div>
+                            </div>
+
+                            <div class="form-row pb-3">
+                                <div class="col-md-6 pb-3">
+                                    <label for="frequency">Frequência</label>
+                                    <input type="phone" class="form-control input-form" id="frequency" placeholder="Digite a frequênca"
+                                        required>
+                                </div> 
+                            </div>
+                                                 
+                            <br>
+                            <h5>Comentários</h5>
+                            <div class="col-12">
+                                <textarea class="form-control input-form" id="comments" rows="3"
+                                    placeholder="Faça um comentário"></textarea>
+                            </div>
+
+                            <br>
+                            <!-- Botão de envio -->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="register-button">Cadastrar</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+<!-- Tabela de busca de Vacinas -->
+        <div class="container mt-lg-5">
+            <div class="row text-end">
+                <div class="col-md-12">
+                    <!-- Botão para a página de cadastro -->
+                    <button type="button" class="btn btn-cor_principal" data-toggle="modal" data-target="#ModalVacina">
+                        Cadastrar Vacinas
+                    </button>
+                </div>
+            </div>
+
+            <div class="row mt-lg-5">
+
+                <div class="col-md-12  table-striped table-responsive">
+                    <div class="search-container col-md-6">
+                        <div class="input-group">
+                            <div class="input-group-append">
+                                <label class="label-pesquisa" type="button">Buscar</label>
+                            </div>
+                            <iconify-icon class="gala_search" icon="gala:search"></iconify-icon>
+                            <input type="text" class="form-control input-form" id="searchInput" placeholder="Pesquisar Vacinas"
+                                onkeyup="searchTable()">
+                                
+                        </div>
+                    </div>
+                    <!-- Tabela de usuários -->
+                    <table class="table" id="userTable">
+                        <thead>
+                            <tr class="cabecalho">
+                                <th scope="col">Vacina</th>
+                                <th scope="col">Aplicação</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Pet</th>
+                            
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="corpo">
+                                <td>Vacina Múltipla Canina</td>
+                                <td>01/01/2023</td>
+                                <td>genetico</td>
+                                <td>Alecrinho</td>
+                                <td>
+                                    <a href="#" title="Editar/vizualizar"><iconify-icon class="btn btn-outline-info"
+                                            icon="fluent:edit-24-regular"></iconify-icon></a>
+                                    <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger"
+                                            icon="icon-park-solid:delete"></iconify-icon></a>
+                                </td>
+                            </tr>
+                            <tr class="corpo">
+                                <td>Vacina contra Clamidiose</td>
+                                <td>26/08/2023</td>
+                                <td>infecção ocular</td>
+                                <td>marfin</td>
+                                <td>
+                                    <a href="#" title="Editar/vizualizar"><iconify-icon class="btn btn-outline-info"
+                                            icon="fluent:edit-24-regular"></iconify-icon></a>
+                                    <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger"
+                                            icon="icon-park-solid:delete"></iconify-icon></a>
+                                </td>
+                            </tr>
+                            <tr class="corpo">
+                                <td>Vacina contra Borreliose</td>
+                                <td>08/08/2023</td>
+                                <td>contra carrapatos</td>
+                                <td>ferinha</td>
+                                <td>
+                                    <a href="#" title="Editar/vizualizar"><iconify-icon class="btn btn-outline-info"
+                                            icon="fluent:edit-24-regular"></iconify-icon></a>
+                                    <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger"
+                                            icon="icon-park-solid:delete"></iconify-icon></a>
+                            
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                    <div id="noResultsMessage" class="text-center alert alert-dark" style="display: none;">Nenhum
+                        correspondente</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../TelaCadastro/telaCadastro.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function searchTable() {
+            var input, filter, table, tr, td, i, txtValue, found;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("userTable");
+            tr = table.getElementsByTagName("tr");
+            found = false;
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0]; // Altere para o índice da coluna que deseja pesquisar
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                        found = true;
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+            // Exibir mensagem quando não houver correspondentes
+            var noResultsMessage = document.getElementById("noResultsMessage");
+            if (found) {
+                noResultsMessage.style.display = "none";
+            } else {
+                noResultsMessage.style.display = "block";
+            }
+            
+        }
+    </script>
+
+</body>
+
+</html>
