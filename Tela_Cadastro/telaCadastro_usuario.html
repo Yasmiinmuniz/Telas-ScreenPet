@@ -142,8 +142,7 @@
                                 <!-- tipo de acesso -->
                                 <div class="input-box">
                                     <label for="accessType">Tipo de acesso</label>
-                                    <select id="accessType" name="accessType">
-                                        <option value="admin">Administrator</option>
+                                    <select class="accessType" id="accessType" name="accessType">
                                         <option value="attendant">Atendente</option>
                                         <option value="veterinarian">Veterinário</option>
                                     </select>
@@ -188,7 +187,7 @@
                             <!-- gênero -->
                             <div class="input-box">
                                 <label for="genderType">Gênero</label>
-                                <select id="genderType" name="genderType">
+                                <select class="genderType" id="genderType" name="genderType">
                                     <option value="female">Feminino</option>
                                     <option value="male">Masculino</option>
                                     <option value="others">Outros</option>
@@ -234,8 +233,8 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="input-box">
-                                    <label for="complement">Complemento</label>
-                                    <input id="complement" type="text" name="complement" placeholder="Complemento">
+                                    <label for="state">Estado</label>
+                                    <input id="state" type="text" name="state" placeholder="Estado" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -247,14 +246,14 @@
                         </div>
 
                         <div class="input-box">
-                            <label for="state">Estado</label>
-                            <input id="state" type="text" name="state" placeholder="Estado" required>
+                            <label for="complement">Complemento</label>
+                            <input id="complement" type="text" name="complement" placeholder="Complemento">
                         </div>
 
                     </section>
                     <div class="register-button">
-                        <button><a href="#">Cadastrar</a></button>
-                    </div>
+                        <button><a href="../Tela_usuarios/tela_usuarios.html">Cadastrar</a></button>
+                    </div> 
                     </form>
                 </div>
             </div>
