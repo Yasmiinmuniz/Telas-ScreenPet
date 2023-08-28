@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="vh-100">
+    <div>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
@@ -93,76 +93,74 @@
                         <div class="input-box">
                             <label for="petName">Nome</label>
                             <input id="petName" type="text" name="petName" placeholder="Nome" required>
-                        </div>
-
-                        <div class="input-box">
                             <label for="raca">Raça</label>
                             <input id="raca" type="text" name="raca" placeholder="Raça" required>
-                        </div>
-
-                        <div class="input-box">
                             <label for="raca">Peso</label>
                             <input id="peso" type="text" name="peso" placeholder="Peso" required>
-                        </div>
-
-                        <div class="input-box">
                             <label for="petName">Nome do Tutor</label>
                             <input id="tutorName" type="text" name="tutorName" placeholder="Nome do tutor" required>
                         </div>
                     </div>
 
-                    <div class="inputs">
-                        <div class="return-inputs">
+                    <div class="return-inputs">
+                        <div class="input-group">
                             <label for="retorno"><h5>É retorno?</h5></label>
-                            <input type="radio" id="s" name="retorno">Sim</imput>
-                            <input type="radio" id="n" name="retorno">Não</imput>
+                            <div class="radio-inputs">
+                                <input type="radio" id="s" name="retorno">
+                                <label for="s">Sim</label>
+                                <input type="radio" id="n" name="retorno">
+                                <label for="n">Não</label>
+                            </div>
                         </div>
-                        <div class="date">
+                    
+                        <div class="input-group date-medico">
                             <label for="dataNascimento"><h5>Data</h5></label>
                             <input type="date" id="dateBirth" name="datebirth">
                         </div>
                         
-                        <div>
+                        <div class="exam-inputs">
                             <label for="doctorName"><h5>Médico</h5></label>
                             <input id="doctorName" type="text" name="doctorName" placeholder="Nome do médico" required>
                         </div>
-
-                        <div class="exam-inputs">
-                            <label for="anamnese"><h5>MOTIVO/ANAMNESE</h5></label>
-                            <input id="anamnese" type="text" name="anamnese" placeholder="Escreva o motivo/anamnese aqui" required>
-                        </div>
-
-                        <div class="exam-inputs">
-                            <label for="exameFisico"><h5>EXAME FÍSICO</h5></label>
-                            <input id="exameFisico" type="text" name="exameFisico" placeholder="Escreva os detalhes do exame físico aqui" required>
-                        </div>
-
-                        <div class="exam-inputs">
-                            <label for="diagnostico"><h5>DIAGNÓSTICO</h5></label>
-                            <input id="diagnostico" type="text" name="diagnostico" placeholder="Escreva o diagnóstico aqui" required>
-                        </div>
-                        
-                        <div class="exam-inputs">
-                            <label for="tratamento"><h5>TRATAMENTO</h5></label>
-                            <input id="tratamento" type="text" name="tratamento" placeholder="Escreva o tratamento aqui" required>
-                        </div>
-
-                        <div class="exam-inputs">
-                            <label for="observacoes"><h5>OBSERVAÇÕES</h5></label>
-                            <input id="observacoes" type="text" name="observacoes" placeholder="Escreva as observações aqui" required>
-                        </div>
                     </div>
+                    
+                        <div class="cadastro">
+                            <div class="exam-inputs">
+                                <label for="anamnese"><h5>MOTIVO/ANAMNESE</h5></label>
+                                <input id="anamnese" type="text" name="anamnese" placeholder="Escreva o motivo/anamnese aqui" required>
+                            </div>
+
+                            <div class="exam-inputs">
+                                <label for="exameFisico"><h5>EXAME FÍSICO</h5></label>
+                                <input id="exameFisico" type="text" name="exameFisico" placeholder="Escreva os detalhes do exame físico aqui" required>
+                            </div>
+
+                            <div class="exam-inputs">
+                                <label for="diagnostico"><h5>DIAGNÓSTICO</h5></label>
+                                <input id="diagnostico" type="text" name="diagnostico" placeholder="Escreva o diagnóstico aqui" required>
+                            </div>
+                            
+                            <div class="exam-inputs">
+                                <label for="tratamento"><h5>TRATAMENTO</h5></label>
+                                <input id="tratamento" type="text" name="tratamento" placeholder="Escreva o tratamento aqui" required>
+                            </div>
+
+                            <div class="exam-inputs">
+                                <label for="observacoes"><h5>OBSERVAÇÕES</h5></label>
+                                <input id="observacoes" type="text" name="observacoes" placeholder="Escreva as observações aqui" required>
+                            </div>
+                        </div>
                     
                 </div>
                 
-                <div class="access">
-                    <div class="cancel-button">
-                        <button><a href="#">Cancelar</a></button>
-                    </div>
-                    <div class="save-button">
-                        <button><a href="#">Salvar</a></button>
-                    </div>
+            <div class="access">
+                <div class="cancel-button">
+                    <button><a href="#">Cancelar</a></button>
                 </div>
+                <div class="save-button">
+                    <button><a href="#">Salvar</a></button>
+                </div>
+            </div>
                 
             </form>
         </div>

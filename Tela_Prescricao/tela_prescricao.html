@@ -79,5 +79,51 @@
                 </div>
             </div>
         </nav>
-    </div>
+
+        <div class="container">
+            <div class="title">
+                <h1>PRESCRIÇÃO</h1>
+            </div>
+            <div class="form">
+                Nome do animal
+                
+                <div>
+                    <label>APRESENTAÇÃO E CONCENTRAÇÃO</label><br>
+                    <input id="concentracion" class ="form-concentracion" type="text" name="concentracion" placeholder="Digite a Apresentação" required>
+                </div>
+                <div>
+                    <label>POSOLOGIA</label><br>
+                    <input id="posology" class ="form-posology" type="text" name="posology" placeholder="Digite a posologia" required>
+                </div>
+                <div>
+                    <div class="container-farmacy-via-quantity">
+                        <div class="farmacy">
+                            <label>TIPO DE FARMÁCIA</label><br>
+                            <label for="vet">Veterinária</label>
+                            <input id="human" type="radio" name="op">
+                            <label for="human">Humano</label>
+                            <input id="vet" type="radio" name="op">
+                        </div>
+                        <div class="via">
+                            <label>VIA</label><br>
+                            <input id="via" class ="form-via" type="text" name="via" placeholder="Via" required>
+                        </div>
+                        <div class="quantity">
+                            <label>QUANTIDADE</label><br>
+                            <input id="qtd" class ="form-qtd" type="number" name="quant" placeholder="0 unidade" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructions">
+                    <label>INSTRUÇÕES GERAIS DO TRATAMENTO</label><br>
+                    <input id= "instructions" class ="form-instructions" type="text" name="instructions">
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="register-button">Salvar</button>
+            </div>
+        </div>
+    </div>    
 </body>
