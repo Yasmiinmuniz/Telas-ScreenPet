@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style_tela_prescricao.css">
+    <link rel="stylesheet" href="../Navbar/style_navbar.css">
+
+    <title>Prescrição</title>
+</head>
+
+<body>
+    <div class="vh-100">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand logo-container" href="#">
+                    <img class="logo" src="../Navbar/ScreenPet.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="clarity:home-solid"></iconify-icon>
+                                Início
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="mdi:account"></iconify-icon>
+                                Tutores
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="mdi:paw"></iconify-icon>
+                                Pets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="healthicons:syringe-vaccine"></iconify-icon>
+                                Vacinas
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <iconify-icon class="sidebar-icon" icon="mdi:pill"></iconify-icon>
+                                Medicamentos
+                            </a>
+                        </li>
+                        <li class="drop_user d-flex flex-fill nav-item">
+                            <iconify-icon class="icon_person" icon="ic:round-person" flip="horizontal"></iconify-icon>
+                            <div class="nav-item dropdown">
+                                <a class="nav-user dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Usuário
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                    <a class="dropdown-item" style="margin-top: 15px;" href="#">Configurações</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Sair</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="title">
+                <h1>PRESCRIÇÃO</h1>
+            </div>
+            <div class="form">
+                Nome do animal
+                
+                <div>
+                    <label>APRESENTAÇÃO E CONCENTRAÇÃO</label><br>
+                    <input id="concentracion" class ="form-concentracion" type="text" name="concentracion" placeholder="Digite a Apresentação" required>
+                </div>
+                <div>
+                    <label>POSOLOGIA</label><br>
+                    <input id="posology" class ="form-posology" type="text" name="posology" placeholder="Digite a posologia" required>
+                </div>
+                <div>
+                    <div class="container-farmacy-via-quantity">
+                        <div class="farmacy">
+                            <label>TIPO DE FARMÁCIA</label><br>
+                            <label for="vet">Veterinária</label>
+                            <input id="human" type="radio" name="op">
+                            <label for="human">Humano</label>
+                            <input id="vet" type="radio" name="op">
+                        </div>
+                        <div class="via">
+                            <label>VIA</label><br>
+                            <input id="via" class ="form-via" type="text" name="via" placeholder="Via" required>
+                        </div>
+                        <div class="quantity">
+                            <label>QUANTIDADE</label><br>
+                            <input id="qtd" class ="form-qtd" type="number" name="quant" placeholder="0 unidade" required>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructions">
+                    <label>INSTRUÇÕES GERAIS DO TRATAMENTO</label><br>
+                    <input id= "instructions" class ="form-instructions" type="text" name="instructions">
+                </div>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="register-button">Salvar</button>
+            </div>
+        </div>
+    </div>    
+</body>

@@ -1,0 +1,146 @@
+.container{
+    --bs-gutter-x: 0rem;
+}
+/* Adicione esta parte ao seu arquivo de estilo CSS existente */
+.title {
+    display: flex; /* Use flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    font-weight: bold; /* Aplica negrito ao texto */
+    height: 15vh; /* Define a altura como 100% da altura da tela */
+    margin: 0; /* Remove margem padrão para evitar espaçamento extra */
+}
+
+
+.exam-inputs input {
+    border: none; /* Remova a borda padrão */
+    border-radius: 10px; /* Faça as bordas arredondadas */
+    background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
+    width:100%;
+    padding: 5px; /* Adicione um espaçamento para separar o texto da barrinha */
+    color: white; /* Defina a cor do texto para branco para melhor contraste */
+}
+
+/* Estilize os campos quando estiverem em foco */
+.exam-inputs input:focus {
+    background-color: rgba(198, 142, 170, 1); /* Altere a cor de fundo ao focar no campo */
+}
+
+.input-form input {
+    border: none; /* Remova a borda padrão */
+    border-radius: 10px; /* Faça as bordas arredondadas */
+    background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
+    padding: 5px; /* Adicione um espaçamento para separar o texto da barrinha */
+    color: white; /* Defina a cor do texto para branco para melhor contraste */
+}
+
+/* Estilize os campos quando estiverem em foco */
+.input-form input:focus {
+    background-color: rgba(198, 142, 170, 1); /* Altere a cor de fundo ao focar no campo */
+}
+
+/* Estilize a bolinha roxa */
+input[type="radio"]:checked + input[type="radio"]::before {
+    background-color: rgba(198, 142, 170, 1); /* Cor da bolinha roxa */
+}
+
+/* Estilize o calendário */
+input[type="date"] {
+    border: none; /* Remova a borda padrão */
+    border-radius: 10px; /* Faça as bordas arredondadas */
+    background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
+    padding: 5px; /* Adicione um espaçamento para separar o texto da bolinha */
+    color: white; /* Defina a cor do texto para branco para melhor contraste */
+}
+
+/* Estilize a barrinha do campo de médico */
+#doctorName {
+    border: none; /* Remova a borda padrão */
+    border-radius: 10px; /* Faça as bordas arredondadas */
+    background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
+    padding: 5px; /* Adicione um espaçamento para separar o texto da barrinha */
+    color: white; /* Defina a cor do texto para branco para melhor contraste */
+}
+
+/* Estilize o campo de médico quando estiver em foco */
+#doctorName:focus {
+    background-color: rgba(198, 142, 170, 1); /* Altere a cor de fundo ao focar no campo */
+}
+
+.return-inputs{
+    display: flex;
+    justify-content:space-between;
+}
+
+.return-inputs label,
+.exam-inputs label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px; /* Mantenha a mesma margem superior para todas as etiquetas */
+}
+
+
+.return-inputs input[type="radio"],
+.return-inputs input[type="date"],
+#doctorName {
+    margin-top: 5px; /* Adiciona um espaçamento acima das caixas de texto */
+}
+
+.exam-inputs input {
+    margin-top: 5px; /* Adiciona um espaçamento acima das caixas de texto */
+}
+
+.radio-inputs {
+    display: flex; /* Cria uma disposição em linha */
+    align-items: center; /* Centraliza verticalmente os itens */
+    gap: 10px; /* Adiciona espaçamento entre os itens */
+}
+
+.input-group.date-medico {
+    display: flex; /* Cria uma disposição em linha */
+    align-items: center; /* Centraliza verticalmente os itens */
+    gap: 10px; /* Adiciona espaçamento entre os itens */
+}
+
+.exam-inputs input[type="date"],
+#doctorName {
+    margin-top: 15px; /* Adicione uma margem superior maior para separar as caixas */
+}
+
+/* Adicione esta parte ao seu arquivo de estilo CSS existente */
+.access {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaçamento acima dos botões */
+}
+
+.save-button button,
+.cancel-button button {
+    background-color: rgba(198, 142, 170, 1); /* Cor de fundo roxa */
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    margin: 0;
+    cursor: pointer;
+    font-size: inherit;
+    color: white; /* Cor do texto branca */
+    text-decoration: none;
+    display: inline-block; /* Impede o sublinhado de link */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+.save-button a,
+.cancel-button a {
+    color: white; /* Cor do texto branca */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.save-button:hover button,
+.cancel-button:hover button {
+    background-color: rgba(150, 100, 130, 1); /* Cor de fundo roxa mais escura */
+}
+
+.save-button,
+.cancel-button {
+    margin: 0 10px; /* Espaçamento horizontal entre os botões */
+}
