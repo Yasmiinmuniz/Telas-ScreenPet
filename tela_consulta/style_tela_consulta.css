@@ -34,6 +34,11 @@
     color: white; /* Defina a cor do texto para branco para melhor contraste */
 }
 
+.input-form{
+    display: flex;
+    gap: 15px;
+}
+
 /* Estilize os campos quando estiverem em foco */
 .input-form input:focus {
     background-color: rgba(198, 142, 170, 1); /* Altere a cor de fundo ao focar no campo */
@@ -215,9 +220,28 @@ input[type="date"] {
 
 .container-box{
     display:flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .box{
     height: 90px;
+}
+
+.topInputContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll{
+    width: 100%;
+    background-color:  #C68EAA;
+    border-radius: 5px;
+    height: 40%;
+    resize: none;
 }
