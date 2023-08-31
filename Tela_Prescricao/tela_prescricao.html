@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div class="vh-100">
+    <div class="vh-100 d-flex align-items-center justify-content-center">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
@@ -85,39 +85,50 @@
                 <h1>PRESCRIÇÃO</h1>
             </div>
             <div class="form">
-                Nome do animal
-                
+                <label class="title">Nome do animal</label>                
                 <div>
-                    <label>APRESENTAÇÃO E CONCENTRAÇÃO</label><br>
+                    <label class="title">APRESENTAÇÃO E CONCENTRAÇÃO</label><br>
                     <input id="concentracion" class ="form-concentracion" type="text" name="concentracion" placeholder="Digite a Apresentação" required>
                 </div>
                 <div>
-                    <label>POSOLOGIA</label><br>
+                    <label class="title">POSOLOGIA</label><br>
                     <input id="posology" class ="form-posology" type="text" name="posology" placeholder="Digite a posologia" required>
                 </div>
-                <div>
-                    <div class="container-farmacy-via-quantity">
-                        <div class="farmacy">
-                            <label>TIPO DE FARMÁCIA</label><br>
-                            <label for="vet">Veterinária</label>
-                            <input id="human" type="radio" name="op">
-                            <label for="human">Humano</label>
-                            <input id="vet" type="radio" name="op">
+        
+                
+                <div class="container-farmacy-via-quantity ">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="left">
+                            <label>TIPO DE FARMÁCIA</label>
+                            <div class="radio-container">                               
+                                <label for="vet" class="radio-label">
+                                    <input id="vet" type="radio" name="op">
+                                    <span class="radio-custom"></span>
+                                    Veterinária                       
+                                </label>
+                                <label for="human" class="radio-label">
+                                    <input id="human" type="radio" name="op">
+                                    <span class="radio-custom"></span>
+                                    Humano
+                                </label>
+                            </div>
                         </div>
-                        <div class="via">
+                        <div class="left">
                             <label>VIA</label><br>
-                            <input id="via" class ="form-via" type="text" name="via" placeholder="Via" required>
+                            <input id="via" class="form-via" type="text" name="via" placeholder="Via" required>
                         </div>
-                        <div class="quantity">
+                        <div class=" left">
                             <label>QUANTIDADE</label><br>
-                            <input id="qtd" class ="form-qtd" type="number" name="quant" placeholder="0 unidade" required>
+                            <input id="qtd" class="form-qtd" type="number" name="quant" placeholder="0 unidade" required>
                         </div>
                     </div>
                 </div>
+
                 
                 <div class="instructions">
                     <label>INSTRUÇÕES GERAIS DO TRATAMENTO</label><br>
-                    <input id= "instructions" class ="form-instructions" type="text" name="instructions">
+                    <textarea id="instructions" class ="scroll" name="instructions" rows="4" cols="130"></textarea>
+                    
                 </div>
                 
             </div>
