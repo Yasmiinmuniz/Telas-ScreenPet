@@ -10,10 +10,10 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style_tela_prescricao.css">
+    <link rel="stylesheet" href="style_telaReceita.css">
     <link rel="stylesheet" href="../Navbar/style_navbar.css">
 
-    <title>Prescrição</title>
+    <title>Receita</title>
 </head>
 
 <body>
@@ -79,61 +79,14 @@
                 </div>
             </div>
         </nav>
-
         <div class="container">
-            <div class="title">
-                <h1>PRESCRIÇÃO</h1>
+            <h1>RECEITA</h1>
+            <div class="receita">
             </div>
-            <div class="form">
-                <label class="title">Nome do animal</label>                
-                <div>
-                    <label class="title">APRESENTAÇÃO E CONCENTRAÇÃO</label><br>
-                    <input id="concentracion" class ="form-concentracion" type="text" name="concentracion" placeholder="Digite a Apresentação" required>
-                </div>
-                <div>
-                    <label class="title">POSOLOGIA</label><br>
-                    <input id="posology" class ="form-posology" type="text" name="posology" placeholder="Digite a posologia" required>
-                </div>
-        
-                
-                <div class="container-farmacy-via-quantity ">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="left">
-                            <label>TIPO DE FARMÁCIA</label>
-                            <div class="radio-container">                               
-                                <label for="vet" class="radio-label">
-                                    <input id="vet" type="radio" name="op">
-                                    <span class="radio-custom"></span>
-                                    Veterinária                       
-                                </label>
-                                <label for="human" class="radio-label">
-                                    <input id="human" type="radio" name="op">
-                                    <span class="radio-custom"></span>
-                                    Humano
-                                </label>
-                            </div>
-                        </div>
-                        <div class="left">
-                            <label>VIA</label><br>
-                            <input id="via" class="form-via" type="text" name="via" placeholder="Via" required>
-                        </div>
-                        <div class=" left">
-                            <label>QUANTIDADE</label><br>
-                            <input id="qtd" class="form-qtd" type="number" name="quant" placeholder="0 unidade" required>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="instructions">
-                    <label>INSTRUÇÕES GERAIS DO TRATAMENTO</label><br>
-                    <textarea id="instructions" class ="scroll" name="instructions" rows="4" cols="130"></textarea>  
-                </div>
-                
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="register-button">Salvar</button>
+            <div class="save-button">
+                <button><a href="#">Salvar</a></button>
             </div>
         </div>
-    </div>    
+
+    </div>   
 </body>

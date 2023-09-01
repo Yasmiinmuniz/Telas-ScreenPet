@@ -206,3 +206,34 @@
     width: fit-content;
     margin-top: 30px;
 }
+
+.save-button button{
+    background-color:#9F5C86; /* Cor de fundo roxa */
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    cursor: pointer;
+    font-size: inherit;
+    color: white; /* Cor do texto branca */
+    text-decoration: none;
+    display: inline-block; /* Impede o sublinhado de link */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+    width: 180px;
+    margin: 0 10px;
+}
+
+.save-button a{
+    color: white; /* Cor do texto branca */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.receita{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./IMG/Rectangle.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85vw; /* Define a largura da div como 100% da largura da viewport */
+    height: 80vh; /* Define a altura da div como 100% da altura da viewport */
+}

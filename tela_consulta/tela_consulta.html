@@ -17,8 +17,7 @@
 </head>
 
 <body>
-
-    <div>
+    <div class="d-flex align-items-center justify-content-center">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
@@ -82,77 +81,89 @@
         </nav>
     </div>
     <div class="container">
-        <div class ="form">
-            <form action="#">
-                <div class = "form-header">
-                    <div class="title">
-                        <h1>CONSULTA</h1>
-                    </div>
-
-                    <div class="input-form">
-                        <div class="input-box">
-                            <label for="petName">Nome</label>
-                            <input id="petName" type="text" name="petName" placeholder="Nome" required>
-                            <label for="raca">Raça</label>
-                            <input id="raca" type="text" name="raca" placeholder="Raça" required>
-                            <label for="raca">Peso</label>
-                            <input id="peso" type="text" name="peso" placeholder="Peso" required>
-                            <label for="petName">Nome do Tutor</label>
-                            <input id="tutorName" type="text" name="tutorName" placeholder="Nome do tutor" required>
-                        </div>
-                    </div>
-
-                    <div class="return-inputs">
-                        <div class="input-group">
-                            <label for="retorno"><h5>É retorno?</h5></label>
-                            <div class="radio-inputs">
-                                <input type="radio" id="s" name="retorno">
-                                <label for="s">Sim</label>
-                                <input type="radio" id="n" name="retorno">
-                                <label for="n">Não</label>
-                            </div>
-                        </div>
-                    
-                        <div class="input-group date-medico">
-                            <label for="dataNascimento"><h5>Data</h5></label>
-                            <input type="date" id="dateBirth" name="datebirth">
-                        </div>
-                        
-                        <div class="exam-inputs">
-                            <label for="doctorName"><h5>Médico</h5></label>
-                            <input id="doctorName" type="text" name="doctorName" placeholder="Nome do médico" required>
-                        </div>
-                    </div>
-                    
-                        <div class="cadastro">
-                            <div class="exam-inputs">
-                                <label for="anamnese"><h5>MOTIVO/ANAMNESE</h5></label>
-                                <input id="anamnese" type="text" name="anamnese" placeholder="Escreva o motivo/anamnese aqui" required>
-                            </div>
-
-                            <div class="exam-inputs">
-                                <label for="exameFisico"><h5>EXAME FÍSICO</h5></label>
-                                <input id="exameFisico" type="text" name="exameFisico" placeholder="Escreva os detalhes do exame físico aqui" required>
-                            </div>
-
-                            <div class="exam-inputs">
-                                <label for="diagnostico"><h5>DIAGNÓSTICO</h5></label>
-                                <input id="diagnostico" type="text" name="diagnostico" placeholder="Escreva o diagnóstico aqui" required>
-                            </div>
-                            
-                            <div class="exam-inputs">
-                                <label for="tratamento"><h5>TRATAMENTO</h5></label>
-                                <input id="tratamento" type="text" name="tratamento" placeholder="Escreva o tratamento aqui" required>
-                            </div>
-
-                            <div class="exam-inputs">
-                                <label for="observacoes"><h5>OBSERVAÇÕES</h5></label>
-                                <input id="observacoes" type="text" name="observacoes" placeholder="Escreva as observações aqui" required>
-                            </div>
-                        </div>
-                    
-                </div>
+        <form action="#">
                 
+            <div class="title">
+                <h1>CONSULTA</h1>
+            </div>
+
+            <div class="input-form">
+                <img src="./IMG/pet.png" width="250px" alt="Imagem meramente ilustrativa de um pet">
+                <div class="container-box">
+                    <div class="topInputContainer">
+                        <div class="input-box">
+                            <label for="petName"><b>Nome do pet</b></label><br>
+                            <input id="petName" type="text" name="petName" placeholder="Nome" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="raca"><b>Raça</b></label><br>
+                            <input id="raca" type="text" name="raca" placeholder="Raça" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="raca"><b>Peso</b></label><br>
+                            <input id="peso" type="number" name="peso" placeholder="Peso" required>
+                        </div>
+                    </div>
+                    <div class="input-box"> 
+                        <label for="petName"><b>Nome do Tutor</b></label><br>
+                        <input id="tutorName" type="text" name="tutorName" placeholder="Nome do tutor" required>
+                    </div>
+                </div>
+            </div>
+            <div class="container-farmacy-via-quantity ">
+                <div class="row justify-content-between align-items-center">
+                    <div class="left">
+                        <label><h5><b>É retorno?</b></h5></label>
+                        <div class="radio-container">                               
+                            <label for="sim" class="radio-label">
+                                <input id="sim" type="radio" name="op">
+                                <span class="radio-custom"></span>
+                                Sim    
+                            </label>
+                            <label for="nao" class="radio-label">
+                                <input id="nao" type="radio" name="op">
+                                <span class="radio-custom"></span>
+                                Não
+                            </label>
+                        </div>
+                    </div>
+                    <div class="left">
+                        <label for="dataNascimento"><h5><b>Data</b></h5></label><br>
+                        <input type="date" id="dateBirth" name="datebirth">
+                    </div>
+                    <div class=" left">
+                        <label for="doctorName"><h5><b>Médico</b></h5></label><br>
+                        <input id="doctorName" type="text" name="doctorName" placeholder="Nome do médico" required>
+                    </div>
+                </div>
+            </div>
+            <div class="cadastro">
+                <div class="exam-inputs">
+                    <label for="anamnese"><h5><b>MOTIVO/ANAMNESE</b></h5></label>
+                    <textarea id="anamnese" class ="box scroll" name="anamnese" rows="4" cols="130" placeholder="Escreva o motivo/anamnese aqui" required></textarea>
+                </div>
+
+                <div class="exam-inputs">
+                    <label for="exameFisico"><h5><b>EXAME FÍSICO</b></h5></label>
+                    <textarea id="exameFisico" class ="box scroll" name="exameFisico" rows="4" cols="130" placeholder="Escreva os detalhes do exame físico aqui" required></textarea>
+                </div>
+
+                <div class="exam-inputs">
+                    <label for="diagnostico"><h5><b>DIAGNÓSTICO</b></h5></label>
+                    <textarea id="diagnostico" class ="box scroll" name="diagnostico" rows="4" cols="130" placeholder="Escreva o diagnóstico aqui" required></textarea>
+                </div>
+                            
+                <div class="exam-inputs">
+                    <label for="tratamento"><h5><b>TRATAMENTO</b></h5></label>
+                    <textarea id="tratamento" class ="box scroll" name="tratamento" rows="4" cols="130" placeholder="Escreva o tratamento aqui" required></textarea>
+                </div>
+
+                <div class="exam-inputs">
+                    <label for="observacoes"><h5><b>OBSERVAÇÕES</b></h5></label>
+                    <textarea id="observacoes" class ="box scroll" name="observacoes" rows="4" cols="130" placeholder="Escreva as observações aqui" required></textarea>
+                </div>
+            </div>
+        </form>
             <div class="access">
                 <div class="cancel-button">
                     <button><a href="#">Cancelar</a></button>
@@ -161,9 +172,6 @@
                     <button><a href="#">Salvar</a></button>
                 </div>
             </div>
-                
-            </form>
-        </div>
     </div>
 </body>
 </html>
