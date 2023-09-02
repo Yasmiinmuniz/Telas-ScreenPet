@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 .container{
-    --bs-gutter-x: 0rem;
+    margin-top: 300px;
 }
 
 .title{
@@ -207,8 +207,13 @@
     margin-top: 30px;
 }
 
-.save-button button{
-    background-color:#9F5C86; /* Cor de fundo roxa */
+.save-button {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 20px; /* Adiciona um espaço entre o conteúdo e o botão */
+}
+
+.save-button button {
+    background-color: #9F5C86; /* Cor de fundo roxa */
     border: none;
     border-radius: 20px; /* Bordas arredondadas */
     padding: 10px 20px; /* Espaçamento interno dos botões */
@@ -219,21 +224,125 @@
     display: inline-block; /* Impede o sublinhado de link */
     transition: background-color 0.3s; /* Efeito de transição suave */
     width: 180px;
-    margin: 0 10px;
 }
 
-.save-button a{
-    color: white; /* Cor do texto branca */
+.save-button button a {
     text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    color: white; /* Cor do texto branca */
 }
 
 .receita{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-image: url("./IMG/Rectangle.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 85vw; /* Define a largura da div como 100% da largura da viewport */
-    height: 80vh; /* Define a altura da div como 100% da altura da viewport */
+    height: 110vh; /* Define a altura da div como 100% da altura da viewport */
+}
+
+.containerPetTutor {
+    width:80%;
+    margin-left: 110px;
+    display: flex;
+    justify-content: space-between; /* Para centralizar as caixas lado a lado */
+    background-size: cover;
+}
+
+/* Estilo das div-filhas (petContainer e tutorContainer) */
+.petContainer,
+.tutorContainer {
+    border-radius: 20px;
+    width: 480px; /* Ajuste o tamanho das caixas conforme necessário */
+    background-image: url("./IMG/Rectangle.png");
+    padding: 20px;
+    color: white; /* Cor do texto dentro das caixas */
+    margin-left: -80px;
+    margin-right: -70px;
+}
+
+/* Estilo da imagem à esquerda */
+.left-image {
+    float: left; /* Alinha a imagem à esquerda */
+    margin-right: 10px; /* Adiciona um espaçamento à direita da imagem para separá-la do texto */
+}
+
+/* Estilo do conteúdo dentro da caixa do pet */
+.petContent {
+    overflow: hidden; /* Impede que o conteúdo ultrapasse a imagem */
+}
+
+.text{
+    color: black;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+.centered-text {
+    text-align: center; /* Centraliza o texto horizontalmente */
+
+}
+
+.left-text {
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.container-infos{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.box-use{
+    width: 1150px;
+    margin-left: 20px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: solid 2px #000;  
+}
+
+.boxFarmacy{
+    width: 1010px;
+    margin-left: 20px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: solid 2px #000;  
+}
+
+.prescription{
+    margin-top: 45px;
+}
+
+.box-prescription{
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    border-bottom: solid 2px #000; 
+    margin-left: -10px; 
+}
+
+.textDateAssignature{
+    text-align: center;
+    color: #9F5C86;
+    font-weight: bold;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+}
+
+.farmacy{
+    margin-top: 15px;
+}
+
+.medication{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.nameLeft{
+    margin-left: 20px;
 }
