@@ -10,20 +10,20 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style_tela_tutores.css">
-    <link rel="stylesheet" href="../Navbar/style_navbar.css">
+    <link rel="stylesheet" href="../vaccine_screen/style_vaccineScreen.css">
+    <link rel="stylesheet" href="../navbar_screen/style_navbar.css">
 
-    <title>Tutores</title>
+    <title>Vacinas</title>
 </head>
 
 <body>
 
     <div class="vh-100">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand logo-container" href="#">
-                    <img class="logo" src="../Navbar/ScreenPet.png" alt="Logo">
+                    <img class="logo" src="../navbar_screen/ScreenPet.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,31 +32,31 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/home_screen/home_screen.html">
                                 <iconify-icon class="sidebar-icon" icon="clarity:home-solid"></iconify-icon>
                                 Início
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/tutor_screen/recipeScreen.html">
                                 <iconify-icon class="sidebar-icon" icon="mdi:account"></iconify-icon>
                                 Tutores
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/pet_screen/pet_screen.html">
                                 <iconify-icon class="sidebar-icon" icon="mdi:paw"></iconify-icon>
                                 Pets
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/vaccine_screen/vaccine_screen.html">
                                 <iconify-icon class="sidebar-icon" icon="healthicons:syringe-vaccine"></iconify-icon>
                                 Vacinas
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="/medication_screen/medicationScreen.html">
                                 <iconify-icon class="sidebar-icon" icon="mdi:pill"></iconify-icon>
                                 Medicamentos
                             </a>
@@ -68,11 +68,14 @@
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Usuário
                                 </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu" style="background-color: #A97F95; position:absolute;"
+                                    aria-labelledby="navbarDropdown">
 
-                                    <a class="dropdown-item" style="margin-top: 15px;" href="#">Configurações</a>
+                                    <a class="dropdown-item" style="margin-top: 15px;"
+                                        href="/user_screen/userScreen.html">Configurações</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Sair</a>
+                                    <a class="dropdown-item"
+                                        href="/login_forgotPassword_screen/HTML/login.html">Sair</a>
                                 </div>
                             </div>
                         </li>
@@ -81,13 +84,14 @@
             </div>
         </nav>
 
-<!-- Cadastrar Tutor -->
-        <div class="modal fade" id="ModalTutor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+
+        <!-- Cadastrar Vacina -->
+        <div class="modal fade" id="ModalVacina" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header btn-cor_principal">
-                        <h5 class="modal-title" id="ModalTutorTitle">Cadastrar Tutor</h5>
+                        <h5 class="modal-title" id="ModalVacinaTitle">Cadastrar Vacina</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -97,88 +101,34 @@
                             <div class="form-row pb-3">
                                 <div class="col-md-6">
                                     <label for="nome">Nome</label>
-                                    <input type="text" class="form-control input-form" id="nome" placeholder="Digite o nome"
-                                        required>
+                                    <input type="text" class="form-control input-form" id="nome"
+                                        placeholder="Digite o nome da vacina" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="cpf">CPF</label>
-                                    <input type="text" class="form-control input-form" id="cpf" placeholder="Digite o CPF" required>
+                                    <label for="type">Tipo</label>
+                                    <input type="text" class="form-control input-form" id="type"
+                                        placeholder="Digite o tipo de vacina" required>
                                 </div>
                             </div>
 
                             <div class="form-row pb-3">
                                 <div class="col-md-6 pb-3">
-                                    <label for="celular">Celular</label>
-                                    <input type="phone" class="form-control input-form" id="celular" placeholder="Digite o celular"
-                                        required>
+                                    <label for="application">Aplicação</label>
+                                    <input type="date" class="form-control input-form" id="application"
+                                        placeholder="Digite a frequênca" required>
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="birthdate">Data de Nascimento</label>
-                                    <input type="date" class="form-control input-form" id="birthdate" required>
-                                </div>  
+                                <div class="col-md-6 pb-3">
+                                    <label for="Pet">Pet</label>
+                                    <input type="text" class="form-control input-form" id="pet"
+                                        placeholder="Digite o nome do pet" required>
+                                </div>
                             </div>
-                            
-                        <div class="form-row pb-3">
-                            <div class="input-box">
-                                <label for="genderType">Gênero</label>
-                                <select id="genderType" name="genderType">
-                                    <option value="female">Feminino</option>
-                                    <option value="male">Masculino</option>
-                                    <option value="others">Outros</option>
-                                </select>
-                            </div>     
-                        </div>                     
+
                             <br>
-                            <h5>Endereço</h5>
-                            <div class="form-row pb-3">
-                                <div class="col-md-6">
-                                    <label for="cep">CEP</label>
-                                    <input type="text" class="form-control input-form" id="cep" placeholder="Digite o cep"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-row pb-3">
-                                <div class="col-md-6">
-                                    <label for="rua">Rua</label>
-                                    <input type="text" class="form-control input-form" id="rua" placeholder="Digite a rua"
-                                        required>
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="numero">Número</label>
-                                    <input type="text" class="form-control input-form" id="numero" placeholder="Digite o número"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-row pb-3">
-                                <div class="col-md-6">
-                                    <label for="complemento">Complemento</label>
-                                    <input type="text" class="form-control input-form" id="complemento"
-                                        placeholder="Digite o complemento">
-                                </div>
-
-                                <div class="col-md-6">
-                                    <label for="bairro">Bairro</label>
-                                    <input type="text" class="form-control input-form" id="bairro" placeholder="Digite o bairro"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-row pb-3">
-                                <div class="col-md-6">
-                                    <label for="cidade">Cidade</label>
-                                    <input type="text" class="form-control input-form" id="cidade" placeholder="Digite a cidade"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="estado">Estado</label>
-                                    <input type="text" class="form-control input-form" id="estado" placeholder="Digite o estado"
-                                        required>
-                                </div>
-                            </div>
+                            <h5>Comentários</h5>
                             <div class="col-12">
-                                <label for="observacoes">Observações</label>
-                                <textarea class="form-control input-form" id="observacoes" rows="3"
-                                    placeholder="Digite observações"></textarea>
+                                <textarea class="form-control input-form" id="comments" rows="3"
+                                    placeholder="Faça um comentário"></textarea>
                             </div>
 
                             <br>
@@ -195,13 +145,13 @@
             </div>
         </div>
 
-<!-- Tabela de busca de tutores -->
+        <!-- Tabela de busca de Vacinas -->
         <div class="container mt-lg-5">
             <div class="row text-end">
                 <div class="col-md-12">
                     <!-- Botão para a página de cadastro -->
-                    <button type="button" class="btn btn-cor_principal" data-toggle="modal" data-target="#ModalTutor">
-                        Cadastrar Tutores
+                    <button type="button" class="btn btn-cor_principal" data-toggle="modal" data-target="#ModalVacina">
+                        Cadastrar Vacinas
                     </button>
                 </div>
             </div>
@@ -214,64 +164,67 @@
                             <div class="input-group-append">
                                 <label class="label-pesquisa" type="button">Buscar</label>
                             </div>
-                            <input type="text" class="form-control input-form" id="searchInput" placeholder="Pesquisar Tutores"
-                                onkeyup="searchTable()">
 
+
+                            <input type="text" class="form-control input-form" id="searchInput"
+                                placeholder="Pesquisar Vacinas" onkeyup="searchTable()">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <iconify-icon class="search gala_search" icon="gala:search"></iconify-icon>
+                                </span>
+                            </div>
                         </div>
+
                     </div>
                     <!-- Tabela de usuários -->
                     <table class="table" id="userTable">
                         <thead>
                             <tr class="cabecalho">
-                                <th scope="col">Nome</th>
-                                <th scope="col">CPF</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Número</th>
+                                <th scope="col">Vacina</th>
+                                <th scope="col">Aplicação</th>
+                                <th scope="col">Tipo</th>
+                                <th scope="col">Pet</th>
+
                                 <th scope="col">Ações</th>
                             </tr>
                         </thead>
                         <tbody>
 
                             <tr class="corpo">
-                                <td>João da Silva</td>
-                                <td>789.789.789.78</td>
-                                <td>joao@example.com</td>
-                                <td>(11) 1234-5678</td>
+                                <td>Vacina Múltipla Canina</td>
+                                <td>01/01/2023</td>
+                                <td>genetico</td>
+                                <td>Alecrinho</td>
                                 <td>
                                     <a href="#" title="Editar/vizualizar"><iconify-icon class="btn btn-outline-info"
                                             icon="fluent:edit-24-regular"></iconify-icon></a>
-                                    <a href="#" title="Pets"><iconify-icon class="btn btn-outline-dark"
-                                            icon="ic:baseline-pets"></iconify-icon></iconify-icon></a>
                                     <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger"
                                             icon="icon-park-solid:delete"></iconify-icon></a>
                                 </td>
                             </tr>
                             <tr class="corpo">
-                                <td>Maria Souza</td>
-                                <td>111.111.119.78</td>
-                                <td>maria@example.com</td>
-                                <td>(22) 9876-5432</td>
+                                <td>Vacina contra Clamidiose</td>
+                                <td>26/08/2023</td>
+                                <td>infecção ocular</td>
+                                <td>marfin</td>
                                 <td>
                                     <a href="#" title="Editar/vizualizar"><iconify-icon class="btn btn-outline-info"
                                             icon="fluent:edit-24-regular"></iconify-icon></a>
-                                    <a href="#" title="Pets"><iconify-icon class="btn btn-outline-dark"
-                                            icon="ic:baseline-pets"></iconify-icon></iconify-icon></a>
                                     <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger"
                                             icon="icon-park-solid:delete"></iconify-icon></a>
                                 </td>
                             </tr>
                             <tr class="corpo">
-                                <td>Lucas Santos</td>
-                                <td>789.789.789.78</td>
-                                <td>lucas@example.com</td>
-                                <td>(33) 8765-4321</td>
+                                <td>Vacina contra Borreliose</td>
+                                <td>08/08/2023</td>
+                                <td>contra carrapatos</td>
+                                <td>ferinha</td>
                                 <td>
                                     <a href="#" title="Editar/vizualizar"><iconify-icon class="btn btn-outline-info"
                                             icon="fluent:edit-24-regular"></iconify-icon></a>
-                                    <a href="#" title="Pets"><iconify-icon class="btn btn-outline-dark"
-                                            icon="ic:baseline-pets"></iconify-icon></iconify-icon></a>
                                     <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger"
                                             icon="icon-park-solid:delete"></iconify-icon></a>
+
                                 </td>
                             </tr>
                         </tbody>
@@ -325,7 +278,7 @@
             } else {
                 noResultsMessage.style.display = "block";
             }
-            
+
         }
     </script>
 

@@ -52,8 +52,18 @@
     border-color: #9F5C86;
 }
 
-.gala_search{
-    color:#1cb719 !important;
-    position:absolute;
-    margin-left: 10px;
+
+.input-group-text {
+    background: none;
+    border: none;
+    padding: 0;
+    left: 590px;
+    padding-top: 12px;
+    position: absolute;
+}
+
+.search {
+    width: 20px; 
+    height: 20px; 
+    color: #271520; 
 }
