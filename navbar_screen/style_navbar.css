@@ -2,21 +2,22 @@
 
 .navbar{
     background-color: #CFA5BA !important;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: fixed  !important;
+    top: 0  !important;
+    width: 100%  !important;
+    z-index: 99;
 }
 
 body {
-    font-family: 'poppins', sans-serif;
+    font-family: 'poppins', sans-serif  !important;
     background-image: url("../navbar_screen/wallpaper.png"); 
     background-color: #E9E9E9;
-    overflow-x: hidden;
-    padding-top: 75px;
+    overflow-x: hidden  !important;
+    padding-top: 75px  !important;
   }
 
 .logo{
-    width: 200px !important;
+    width: 120px !important;
 }
 
 .sidebar-icon {
@@ -26,7 +27,7 @@ body {
 }
 
 .nav-link{
-    font-size: 15px;
+    font-size: 12px;
     display: flex !important;
     align-items: center !important;
     color: #271520 !important;
@@ -76,7 +77,6 @@ body {
 
 .drop_user{
     margin-left: 2rem !important;
-    padding-left: 4rem !important;
 }
 
 @media (max-width: 768px) {
