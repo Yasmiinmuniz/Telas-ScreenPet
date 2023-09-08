@@ -171,9 +171,6 @@
                             <input type="text" class="form-control" id="searchInput"
                                 placeholder="Pesquisar Vacinas" onkeyup="searchTable()">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">
-                                    <iconify-icon class="search gala_search" icon="gala:search"></iconify-icon>
-                                </span>
                             </div>
                         </div>
                     </div>
@@ -240,7 +237,6 @@
     </div>
 
     <script src="../medication_screen/medicationScreen.js"></script>
-    <!-- <script src="../TelaCadastro/telaCadastro.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -252,39 +248,7 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    <script>
-        function searchTable() {
-            var input, filter, table, tr, td, i, txtValue, found;
-            input = document.getElementById("searchInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("userTable");
-            tr = table.getElementsByTagName("tr");
-            found = false;
-
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0]; // Altere para o índice da coluna que deseja pesquisar
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                        found = true;
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-
-            // Exibir mensagem quando não houver correspondentes
-            var noResultsMessage = document.getElementById("noResultsMessage");
-            if (found) {
-                noResultsMessage.style.display = "none";
-            } else {
-                noResultsMessage.style.display = "block";
-            }
-            
-        }
-    </script> -->
-
+    
 </body>
 
 </html>

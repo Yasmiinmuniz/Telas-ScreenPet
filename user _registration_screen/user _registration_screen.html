@@ -267,33 +267,9 @@
                 </div>
             </div>
         </div>
-        <script>
-            // CRMV
-            function handleCrmvBoxDisplay() {
-                const accessTypeSelect = document.getElementById("accessType");
-                const crmvBox = document.getElementById("crmvBox");
-
-                if (accessTypeSelect.value === "veterinarian") {
-                    crmvBox.style.display = "block";
-                } else {
-                    crmvBox.style.display = "none";
-                }
-            }
-            document.getElementById("accessType").addEventListener("change", handleCrmvBoxDisplay);
-
-            // data de nascimento
-            document.getElementById("birthdate").addEventListener("change", () => {
-                const selectedDate = new Date(document.getElementById("birthdate").value);
-                const currentDate = new Date();
-                const age = currentDate.getFullYear() - selectedDate.getFullYear();
-
-                console.log("Idade:", age);
-            });
-        </script>
-
     </section>
 
-    <script src="../TelaCadastro/telaCadastro.js"></script>
+    <script src="../user _registration_screen/user_registrationScreen.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
