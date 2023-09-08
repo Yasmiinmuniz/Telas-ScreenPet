@@ -52,8 +52,7 @@
     border-color: #9F5C86;
 }
 
-.gala_search{
-    color:#1cb719 !important;
-    position:absolute;
-    margin-left: 10px;
+.input-group-text{
+    background-color: #fff;
+    margin: 0;
 }
