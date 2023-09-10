@@ -16,5 +16,4 @@ import 'https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js';
     integrity = "sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin = "anonymous"
 // Outro código JavaScript relacionado ao seu projeto pode ser colocado aqui
-import 'script.js'
-
+import '../assets/script'
