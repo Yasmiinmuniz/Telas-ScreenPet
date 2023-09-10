@@ -1,7 +1,7 @@
 .container{
     --bs-gutter-x: 0rem;
 }
-/* Adicione esta parte ao seu arquivo de estilo CSS existente */
+
 .title {
     display: flex; /* Use flexbox para centralizar */
     justify-content: center; /* Centraliza horizontalmente */
@@ -18,7 +18,7 @@
     background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
     width:100%;
     padding: 5px; /* Adicione um espaçamento para separar o texto da barrinha */
-    color: white; /* Defina a cor do texto para branco para melhor contraste */
+    color: #271520; /* Defina a cor do texto para branco para melhor contraste */
 }
 
 /* Estilize os campos quando estiverem em foco */
@@ -31,7 +31,7 @@
     border-radius: 10px; /* Faça as bordas arredondadas */
     background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
     padding: 5px; /* Adicione um espaçamento para separar o texto da barrinha */
-    color: white; /* Defina a cor do texto para branco para melhor contraste */
+    color: #271520; /* Defina a cor do texto para branco para melhor contraste */
 }
 
 .input-form{
@@ -44,9 +44,9 @@
     background-color: rgba(198, 142, 170, 1); /* Altere a cor de fundo ao focar no campo */
 }
 
-/* Estilize a bolinha roxa */
+/* Estilize a bolinha */
 input[type="radio"]:checked + input[type="radio"]::before {
-    background-color: rgba(198, 142, 170, 1); /* Cor da bolinha roxa */
+    background-color: rgba(198, 142, 170, 1); /* Cor da bolinha */
 }
 
 /* Estilize o calendário */
@@ -55,7 +55,7 @@ input[type="date"] {
     border-radius: 10px; /* Faça as bordas arredondadas */
     background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
     padding: 5px; /* Adicione um espaçamento para separar o texto da bolinha */
-    color: white; /* Defina a cor do texto para branco para melhor contraste */
+    color: #525252; /* Defina a cor do texto para branco para melhor contraste */
 }
 
 /* Estilize a barrinha do campo de médico */
@@ -64,7 +64,7 @@ input[type="date"] {
     border-radius: 10px; /* Faça as bordas arredondadas */
     background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
     padding: 5px; /* Adicione um espaçamento para separar o texto da barrinha */
-    color: white; /* Defina a cor do texto para branco para melhor contraste */
+    color: #525252; /* Defina a cor do texto para branco para melhor contraste */
 }
 
 /* Estilize o campo de médico quando estiver em foco */
@@ -120,7 +120,7 @@ input[type="date"] {
 }
 
 .save-button button{
-    background-color:#9F5C86; /* Cor de fundo roxa */
+    background-color:#6B3E5B; /* Cor de fundo  */
     border: none;
     border-radius: 20px; /* Bordas arredondadas */
     padding: 10px 20px; /* Espaçamento interno dos botões */
@@ -135,7 +135,7 @@ input[type="date"] {
 }
 
 .cancel-button button {
-    background-color: #525252; /* Cor de fundo roxa */
+    background-color: #525252; /* Cor de fundo */
     border: none;
     border-radius: 20px; /* Bordas arredondadas */
     padding: 10px 20px; /* Espaçamento interno dos botões */
@@ -212,7 +212,7 @@ input[type="date"] {
 }
 .form-qtd{
     width: 100px;
-    background-color:  #C68EAA;
+    background-color:  #26ac1f;
     border-radius: 5px;
     height: 35px;
     justify-content: center;
@@ -238,6 +238,7 @@ input[type="date"] {
     display: none;
 }
 
+/* Cor dos campos de digitação */
 .scroll{
     width: 100%;
     background-color:  #C68EAA;

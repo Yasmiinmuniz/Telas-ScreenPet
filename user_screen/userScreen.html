@@ -38,7 +38,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/tutor_screen/recipeScreen.html">
+                            <a class="nav-link" href="/tutor_screen/tutorScreen.html">
                                 <iconify-icon class="sidebar-icon" icon="mdi:account"></iconify-icon>
                                 Tutores
                             </a>
@@ -61,6 +61,14 @@
                                 Medicamentos
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/query_screen/queryScreen.html">
+                                <iconify-icon  class="sidebar-icon" icon="clarity:clipboard-solid"></iconify-icon>
+                                Consulta
+                            </a>
+                        </li>
+
                         <li class="drop_user d-flex flex-fill nav-item">
                             <iconify-icon class="icon_person" icon="ic:round-person" flip="horizontal"></iconify-icon>
                             <div class="nav-item dropdown">
@@ -86,7 +94,7 @@
             <div class="row text-end">
                 <div class="col-md-12">
                     <!-- Botão para a página de cadastro -->
-                    <a href="/TelaCadastro/telaCadastro_usuario.html"
+                    <a href="/user%20_registration_screen/user%20_registration_screen.html"
                         class="btn btn-cor_principal">Cadastrar Usuário</a>
                 </div>
             </div>
@@ -104,9 +112,6 @@
                             <input type="text" class="form-control input-form" id="searchInput"
                                 placeholder="Pesquisar Vacinas" onkeyup="searchTable()">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">
-                                    <iconify-icon class="search gala_search" icon="gala:search"></iconify-icon>
-                                </span>
                             </div>
                         </div>
                     </div>
@@ -171,7 +176,8 @@
         </div>
     </div>
 
-    <script src="../TelaCadastro/telaCadastro.js"></script>
+
+    <script src="../user_screen/userScreen.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -182,39 +188,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
-        <script>
-            function searchTable() {
-              var input, filter, table, tr, td, i, txtValue, found;
-              input = document.getElementById("searchInput");
-              filter = input.value.toUpperCase();
-              table = document.getElementById("userTable");
-              tr = table.getElementsByTagName("tr");
-              found = false;
-          
-              for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0]; // Altere para o índice da coluna que deseja pesquisar
-                if (td) {
-                  txtValue = td.textContent || td.innerText;
-                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                    tr[i].style.display = "";
-                    found = true;
-                  } else {
-                    tr[i].style.display = "none";
-                  }
-                }
-              }
-          
-              // Exibir mensagem quando não houver correspondentes
-              var noResultsMessage = document.getElementById("noResultsMessage");
-              if (found) {
-                noResultsMessage.style.display = "none";
-              } else {
-                noResultsMessage.style.display = "block";
-              }
-            }
-          </script>
-          
+         
 </body>
 
 </html>
