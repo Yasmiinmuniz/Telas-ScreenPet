@@ -5,6 +5,7 @@
     position: fixed  !important;
     top: 0  !important;
     width: 100%  !important;
+    margin-top: 0px;
     z-index: 99;
 }
 
@@ -16,9 +17,15 @@ body {
     padding-top: 75px  !important;
   }
 
-.logo{
-    width: 120px !important;
+  .logo {
+    width: 200px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-start;
+    margin-top: -12px;
 }
+
 
 .sidebar-icon {
     font-size: 20px !important;
