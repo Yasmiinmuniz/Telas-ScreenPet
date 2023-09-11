@@ -1,23 +1,15 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/user.css">
     <link rel="stylesheet" href="../style/navbar.css">
-
     <title>Lista Usuarios</title>
 </head>
-
 <body>
-
     <div class="vh-100">
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -25,8 +17,7 @@
                 <a class="navbar-brand logo-container" href="#">
                     <img class="logo" src="../images/screen_pet.png" alt="Logo">
                 </a>
-                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -61,24 +52,19 @@
                                 Medicamentos
                             </a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="./query.html">
                                 <iconify-icon  class="sidebar-icon" icon="clarity:clipboard-solid"></iconify-icon>
                                 Consulta
                             </a>
                         </li>
-
                         <li class="drop_user d-flex flex-fill nav-item">
                             <iconify-icon class="icon_person" icon="ic:round-person" flip="horizontal"></iconify-icon>
                             <div class="nav-item dropdown">
-                                <a class="nav-user dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-user dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Usuário
                                 </a>
-                                <div class="dropdown-menu" style="background-color: #A97F95; position:absolute;"
-                                    aria-labelledby="navbarDropdown">
-                                    
+                                <div class="dropdown-menu" style="background-color: #A97F95; position:absolute;" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" style="margin-top: 15px;" href="./user.html">Configurações</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="./login.html">Sair</a>
@@ -89,106 +75,55 @@
                 </div>
             </div>
         </nav>
-
         <div class="container mt-lg-5">
             <div class="row text-end">
                 <div class="col-md-12">
                     <!-- Botão para a página de cadastro -->
-                    <a href="./register_user.html"
-                        class="btn btn-cor_principal">Cadastrar Usuário</a>
+                    <a href="./register_user.html" class="btn btn-cor_principal">Cadastrar Usuário</a>
                 </div>
             </div>
-
             <div class="row mt-lg-5">
-
                 <div class="col-md-12  table-striped table-responsive">
                     <div class="search-container col-md-6">
                         <div class="input-group">
                             <div class="input-group-append">
                                 <label class="label-pesquisa" type="button">Buscar</label>
                             </div>
-
-
-                            <input type="text" class="form-control input-form" id="searchInput"
-                                placeholder="Pesquisar Vacinas" onkeyup="searchTable()">
+                            <input type="text" class="form-control input-form" id="searchInput" placeholder="Pesquisar por Usuário" onkeyup="searchTable()">
                             <div class="input-group-prepend">
                             </div>
                         </div>
                     </div>
-                            
-                        </div>
-                    </div>
-                    <!-- Tabela de usuários -->
-                    <table class="table" id="userTable">
-                        <thead>
-                            <tr class="cabecalho">
-                                <th scope="col">Nome</th>
-                                <th scope="col">Tipo de Acesso</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Número</th>
-                                <th scope="col">Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-<!-- Alterar nome dessa classe (não pode ser body nem table) -->
-                            <tr class="corpo">
-                                <td>João da Silva</td>
-                                <td>Administrador</td>
-                                <td>joao@example.com</td>
-                                <td>(11) 1234-5678</td>
-                                <td>
-                                    <a href="#"><iconify-icon class="btn btn-outline-info"
-                                            icon="fluent:edit-24-regular"></iconify-icon></a>
-                                    <a href="#"><iconify-icon class="btn btn-outline-danger"
-                                            icon="icon-park-solid:delete"></iconify-icon></a>
-                                </td>
-                            </tr>
-                            <tr class="corpo">
-                                <td>Maria Souza</td>
-                                <td>Atendente</td>
-                                <td>maria@example.com</td>
-                                <td>(22) 9876-5432</td>
-                                <td>
-                                    <a href="#"><iconify-icon class="btn btn-outline-info"
-                                            icon="fluent:edit-24-regular"></iconify-icon></a>
-                                    <a href="#"><iconify-icon class="btn btn-outline-danger"
-                                            icon="icon-park-solid:delete"></iconify-icon></a>
-                                </td>
-                            </tr>
-                            <tr class="corpo">
-                                <td>Lucas Santos</td>
-                                <td>Veterinário</td>
-                                <td>lucas@example.com</td>
-                                <td>(33) 8765-4321</td>
-                                <td>
-                                    <a href="#"><iconify-icon class="btn btn-outline-info"
-                                            icon="fluent:edit-24-regular"></iconify-icon></a>
-                                    <a href="#"><iconify-icon class="btn btn-outline-danger"
-                                            icon="icon-park-solid:delete"></iconify-icon></a>
-                                </td>
+                </div>
+            </div>
+            <!-- Tabela de usuários -->
+            <table class="table" id="userTable">
+                <thead>
+                    <tr class="cabecalho">
+                        <th scope="col">Nome</th>
+                        <th scope="col">Tipo de Acesso</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Número</th>
+                        <th scope="col">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <!-- Alterar nome dessa classe (não pode ser body nem table) -->
+                <tr class="corpo">
+                    
                             </tr>
                         </tbody>
-
                     </table>
-                    <div id="noResultsMessage" class="text-center alert alert-dark" style="display: none;">Nenhum correspondente</div>
+                    <div id="noResultsMessage" class="text-center alert alert-dark" style="display: none;"> Nenhum usuário correspondente</div>
                 </div>
             </div>
         </div>
     </div>
-
-
+    <script src="../integration/user.js"></script>
     <script src="../assets/user.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-         
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
 </body>
-
 </html>
