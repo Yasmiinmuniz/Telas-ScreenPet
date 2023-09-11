@@ -125,7 +125,7 @@ input[type="date"] {
 .prescriptions-button {
     text-align: right;}
 
-.prescriptions-button button {
+.prescriptions-button .button {
     background-color: #9F5C86;
     color: white;
     padding: 10px 20px;
@@ -139,6 +139,7 @@ input[type="date"] {
     font-weight: bold;
     transition: background-color 0.3s;
     width: 250px;
+    text-align: center;
 }
 
 .prescriptions-button button:hover {

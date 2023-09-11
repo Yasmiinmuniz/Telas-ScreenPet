@@ -63,7 +63,7 @@
 
                         <li class="nav-item">
                             <a class="nav-link" href="./query.html">
-                                <iconify-icon  class="sidebar-icon" icon="clarity:clipboard-solid"></iconify-icon>
+                                <iconify-icon class="sidebar-icon" icon="clarity:clipboard-solid"></iconify-icon>
                                 Consulta
                             </a>
                         </li>
@@ -77,8 +77,9 @@
                                 </a>
                                 <div class="dropdown-menu" style="background-color: #A97F95; position:absolute;"
                                     aria-labelledby="navbarDropdown">
-                                    
-                                    <a class="dropdown-item" style="margin-top: 15px;" href="./user.html">Configurações</a>
+
+                                    <a class="dropdown-item" style="margin-top: 15px;"
+                                        href="./user.html">Configurações</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="./login.html">Sair</a>
                                 </div>
@@ -91,19 +92,20 @@
     </div>
     <div class="container">
         <form action="#">
-                
+
             <div class="title">
                 <h1>CONSULTA</h1>
             </div>
-
+            <!-- botão para adicionar prescrição -->
+            <div class="prescriptions">
+                <div class="prescriptions-button">
+                <a href="/src/pages/prescriptions.html"
+                        class="bnt button">Adicionar Prescrição</a>
+                </div>
+            </div>
             <div class="input-form">
                 <img src="../images/pet.png" width="250px" alt="Imagem meramente ilustrativa de um pet">
                 <div class="container-box">
-                    <div class="prescriptions">
-                        <div class="prescriptions-button">
-                            <button><href="#">Adicionar Prescrição</href=></button>
-                        </div>
-                    </div>
                     <div class="topInputContainer">
                         <div class="input-box">
                             <label for="petName"><b>Nome do pet</b></label><br>
@@ -118,7 +120,7 @@
                             <input id="peso" type="number" name="peso" placeholder="Peso" required>
                         </div>
                     </div>
-                    <div class="input-box"> 
+                    <div class="input-box">
                         <label for="petName"><b>Nome do Tutor</b></label><br>
                         <input id="tutorName" type="text" name="tutorName" placeholder="Nome do tutor" required>
                     </div>
@@ -127,12 +129,14 @@
             <div class="container-farmacy-via-quantity ">
                 <div class="row justify-content-between align-items-center">
                     <div class="left">
-                        <label><h5><b>É retorno?</b></h5></label>
-                        <div class="radio-container">                               
+                        <label>
+                            <h5><b>É retorno?</b></h5>
+                        </label>
+                        <div class="radio-container">
                             <label for="sim" class="radio-label">
                                 <input id="sim" type="radio" name="op">
                                 <span class="radio-custom"></span>
-                                Sim    
+                                Sim
                             </label>
                             <label for="nao" class="radio-label">
                                 <input id="nao" type="radio" name="op">
@@ -142,53 +146,71 @@
                         </div>
                     </div>
                     <div class="left">
-                        <label for="dataNascimento"><h5><b>Data</b></h5></label><br>
+                        <label for="dataNascimento">
+                            <h5><b>Data</b></h5>
+                        </label><br>
                         <input type="date" id="dateBirth" name="datebirth">
                     </div>
                     <div class=" left">
-                        <label for="doctorName"><h5><b>Médico</b></h5></label><br>
+                        <label for="doctorName">
+                            <h5><b>Médico</b></h5>
+                        </label><br>
                         <input id="doctorName" type="text" name="doctorName" placeholder="Nome do médico" required>
                     </div>
                 </div>
             </div>
             <div class="cadastro">
                 <div class="exam-inputs">
-                    <label for="anamnese"><h5><b>MOTIVO/ANAMNESE</b></h5></label>
-                    <textarea id="anamnese" class ="box scroll" name="anamnese" rows="4" cols="130" placeholder="Escreva o motivo/anamnese aqui" required></textarea>
+                    <label for="anamnese">
+                        <h5><b>MOTIVO/ANAMNESE</b></h5>
+                    </label>
+                    <textarea id="anamnese" class="box scroll" name="anamnese" rows="4" cols="130"
+                        placeholder="Escreva o motivo/anamnese aqui" required></textarea>
                 </div>
 
                 <div class="exam-inputs">
-                    <label for="exameFisico"><h5><b>EXAME FÍSICO</b></h5></label>
-                    <textarea id="exameFisico" class ="box scroll" name="exameFisico" rows="4" cols="130" placeholder="Escreva os detalhes do exame físico aqui" required></textarea>
+                    <label for="exameFisico">
+                        <h5><b>EXAME FÍSICO</b></h5>
+                    </label>
+                    <textarea id="exameFisico" class="box scroll" name="exameFisico" rows="4" cols="130"
+                        placeholder="Escreva os detalhes do exame físico aqui" required></textarea>
                 </div>
 
                 <div class="exam-inputs">
-                    <label for="diagnostico"><h5><b>DIAGNÓSTICO</b></h5></label>
-                    <textarea id="diagnostico" class ="box scroll" name="diagnostico" rows="4" cols="130" placeholder="Escreva o diagnóstico aqui" required></textarea>
-                </div>
-                            
-                <div class="exam-inputs">
-                    <label for="tratamento"><h5><b>TRATAMENTO</b></h5></label>
-                    <textarea id="tratamento" class ="box scroll" name="tratamento" rows="4" cols="130" placeholder="Escreva o tratamento aqui" required></textarea>
+                    <label for="diagnostico">
+                        <h5><b>DIAGNÓSTICO</b></h5>
+                    </label>
+                    <textarea id="diagnostico" class="box scroll" name="diagnostico" rows="4" cols="130"
+                        placeholder="Escreva o diagnóstico aqui" required></textarea>
                 </div>
 
                 <div class="exam-inputs">
-                    <label for="observacoes"><h5><b>OBSERVAÇÕES</b></h5></label>
-                    <textarea id="observacoes" class ="box scroll" name="observacoes" rows="4" cols="130" placeholder="Escreva as observações aqui" required></textarea>
+                    <label for="tratamento">
+                        <h5><b>TRATAMENTO</b></h5>
+                    </label>
+                    <textarea id="tratamento" class="box scroll" name="tratamento" rows="4" cols="130"
+                        placeholder="Escreva o tratamento aqui" required></textarea>
+                </div>
+
+                <div class="exam-inputs">
+                    <label for="observacoes">
+                        <h5><b>OBSERVAÇÕES</b></h5>
+                    </label>
+                    <textarea id="observacoes" class="box scroll" name="observacoes" rows="4" cols="130"
+                        placeholder="Escreva as observações aqui" required></textarea>
                 </div>
             </div>
         </form>
-            <div class="access">
-                <div class="cancel-button">
-                    <button><a href="#">Cancelar</a></button>
-                </div>
-                <div class="save-button">
-                    <button><a href="#">Salvar</a></button>
-                </div>
-
+        <div class="access">
+            <div class="cancel-button">
+                <button><a href="#">Cancelar</a></button>
             </div>
+            <div class="save-button">
+                <button><a href="#">Salvar</a></button>
+            </div>
+        </div>
     </div>
-    
+
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -201,4 +223,5 @@
         crossorigin="anonymous"></script>
 
 </body>
+
 </html>
