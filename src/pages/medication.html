@@ -78,7 +78,6 @@
                 </div>
             </nav>
         </section>
-        
         <!-- Cadastrar Medicamento -->
         <div class="modal fade" id="ModalMedicamento" id="registerMedicament" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -132,7 +131,6 @@
         <div class="container mt-lg-5">
             <div class="row text-end">
                 <div class="col-md-12">
-                    <!-- Botão para a página de cadastro -->
                     <button type="button" class="btn btn-cor_principal" data-toggle="modal" data-target="#ModalMedicamento">
                         Cadastrar Medicamento
                     </button>
@@ -145,8 +143,7 @@
                             <div class="input-group-append">
                                 <label class="label-pesquisa" type="button">Buscar</label>
                             </div>
-                            <input type="text" class="form-control" id="searchInput"
-                                placeholder="Pesquisar Medicamento" onkeyup="searchTable()">
+                            <input type="text" class="form-control" id="searchInput" placeholder="Pesquisar por Medicamento" onkeyup="searchTable()">
                             <div class="input-group-prepend">
                             </div>
                         </div>
@@ -159,6 +156,7 @@
                                 <th scope="col">Tipo</th>
                                 <th scope="col">Dosagem(mg)</th>
                                 <th scope="col">Composto Ativo</th>
+                                <th scope="col">Comentários</th>
                                 <th scope="col">Ações</th>
                             </tr>
                         </thead>

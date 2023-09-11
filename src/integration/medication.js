@@ -30,9 +30,9 @@ form.addEventListener("submit", async function (event) {
 
     const result = await response.json();
     console.log("Medicamento cadastrado com sucesso.");
-      window.location.reload();
+    window.location.reload();
   } catch (error) {
-    console.error(error);
+    console.error("Erro ao cadastrar medicamento.");
   }
 });
 
@@ -42,17 +42,17 @@ function carregarMedicamentos() {
   .then(data => {
     const tabelaMedicamentos = document.getElementById('userTable');
     const tbody = tabelaMedicamentos.querySelector('tbody');
-
-    data.forEach(medicamento => {
+    data.forEach(medicament => {
       const row = document.createElement('tr');
       row.innerHTML = `
-      <td>${medicamento.name}</td>
-      <td>${medicamento.type}</td>
-      <td>${medicamento.dosage}</td>
-      <td>${medicamento.activeCompound}</td>
-      <td><a href="#" title="Editar" onclick="carregarDadosDoMedicamentoParaEdicao(${medicamento.id})">
+      <td>${medicament.name}</td>
+      <td>${medicament.type}</td>
+      <td>${medicament.dosage}</td>
+      <td>${medicament.activeCompound}</td>
+      <td>${medicament.comments}</td>
+      <td><a href="#" title="Editar" onclick="carregarDadosDoMedicamentoParaEdicao(${medicament.id})">
       <iconify-icon class="btn btn-outline-info" icon="fluent:edit-24-regular"></iconify-icon></a>
-      <a href="#" title="Remover" onclick="deleteMedicamento(${medicamento.id})"><iconify-icon class="btn btn-outline-danger" icon="icon-park-solid:delete"></iconify-icon></a></td>`;
+      <a href="#" title="Remover" onclick="deleteMedicament(${medicament.id})"><iconify-icon class="btn btn-outline-danger" icon="icon-park-solid:delete"></iconify-icon></a></td>`;
       tbody.appendChild(row);
     });
   })
@@ -63,23 +63,8 @@ function carregarMedicamentos() {
 
 document.addEventListener('DOMContentLoaded', carregarMedicamentos);
 
-function carregarDadosDoMedicamentoParaEdicao(medicamentoId) {
-  fetch(`http://localhost:8088/api/v5/pesquisar-medicamento/${medicamentoId}`)
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("edit-name").value = data.name;
-    document.getElementById("edit-type").value = data.type;
-    document.getElementById("edit-dosage").value = data.dosage;
-    document.getElementById("edit-activeCompound").value = data.activeCompound;
-    document.getElementById("edit-comments").value = data.comments;
-  })
-  .catch(error => {
-    console.error('Erro ao carregar dados do medicamento para edição:', error);
-  });
-}
-
-function deleteMedicamento(medicamentoId) {
-  const url = `http://localhost:8088/api/v5/deletar-medicamento/${medicamentoId}`;
+function deleteMedicament(medicamentId) {
+  const url = `http://localhost:8088/api/v5/deletar-medicamento/${medicamentId}`;
   fetch(url, {
     method: "DELETE",
   })
