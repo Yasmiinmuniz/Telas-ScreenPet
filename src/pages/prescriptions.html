@@ -76,55 +76,49 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
-            <div class="title">
-                <h5>PRESCRIÇÃO</h5>
-            </div>
-            <div class="form">
-                <label class="title">Nome do animal</label>                
-                <div>
-                    <label class="title">APRESENTAÇÃO E CONCENTRAÇÃO</label><br>
-                    <input id="concentracion" class ="form-concentracion" type="text" name="concentracion" placeholder="Digite a Apresentação" required>
-                </div>
-                <div>
-                    <label class="title">POSOLOGIA</label><br>
-                    <input id="posology" class ="form-posology" type="text" name="posology" placeholder="Digite a posologia" required>
-                </div>
-                <div class="container-farmacy-via-quantity ">
-                    <div class="row justify-content-between align-items-center">
-                        <div class="left">
-                            <label>TIPO DE FARMÁCIA</label>
-                            <div class="radio-container">                               
-                                <label for="vet" class="radio-label">
-                                    <input id="vet" type="radio" name="op">
-                                    <span class="radio-custom"></span>
-                                    Veterinária                       
-                                </label>
-                                <label for="human" class="radio-label">
-                                    <input id="human" type="radio" name="op">
-                                    <span class="radio-custom"></span>
-                                    Humano
-                                </label>
+        <div class="row justify-content-center"> <!-- Centralizar o formulário -->
+            <div class="container form-container">
+                <div class="form" id="form">
+                    <div action="#">
+                        <div class="form-header">
+                            <div class="title">
+                                <h1>Prescrição</h1>
                             </div>
                         </div>
-                        <div class="left">
-                            <label>Via de administração do medicamento</label><br>
-                            <input id="via" class="form-via" type="text" name="via" placeholder="Via" required>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="name">Nome do Animal</label>
+                                <div class="input-box">
+                                    <input id="name" type="text" name="name" placeholder="Digite o nome completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- data de nascimento -->
+                                <label for="birthday">Data</label>
+                                <div class="input-box">
+                                    <input id="birthday" type="date" name="birthday" required>
+                                </div>
+                            </div>
                         </div>
-                        <div class=" left">
-                            <label>QUANTIDADE</label><br>
-                            <input id="qtd" class="form-qtd" type="number" name="quant" placeholder="0 unidade" required>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="posology">Posologia</label>
+                                <div class="input-box">
+                                    <input id="posology" type="text" name="posology" placeholder="Digite aqui a posologia" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="comments">Comentários</label>
+                                <div class="input-box">
+                                    <input id="comments" type="text" name="comments" placeholder="Digite o comentário" required>
+                                </div>
+                            </div>
                         </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="register-button">Salvar</button>  
                     </div>
                 </div>
-                <div class="instructions">
-                    <label>INSTRUÇÕES GERAIS DO TRATAMENTO</label><br>
-                    <textarea id="instructions" class ="scroll" name="instructions" rows="4" cols="130"></textarea>  
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="register-button">Salvar</button>  
-            </div>
-            </div>
+            </form>
         </div>
     </div>    
 </body>
