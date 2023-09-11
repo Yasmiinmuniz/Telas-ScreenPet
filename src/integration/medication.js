@@ -1,7 +1,7 @@
 const form = document.querySelector("#form");
 
 form.addEventListener("submit", async function (event) {
-  event.preventDefault(); // Impede o comportamento padrão do envio do formulário
+  event.preventDefault();
   const url = "http://localhost:8088/api/v5/cadastrar-medicamento";
 
   const iname = document.querySelector("#name").value;
@@ -39,7 +39,6 @@ function carregarMedicamentos() {
   fetch('http://localhost:8088/api/v5/listar-medicamentos')
   .then(response => response.json())
   .then(data => {
-    // Manipular os dados e exibi-los na página
     const tabelaMedicamentos = document.getElementById('userTable');
     const tbody = tabelaMedicamentos.querySelector('tbody');
 
@@ -50,9 +49,9 @@ function carregarMedicamentos() {
       <td>${medicamento.type}</td>
       <td>${medicamento.dosage}</td>
       <td>${medicamento.activeCompound}</td>
-      <td><a href="#" title="Editar/vizualizar"><iconify-icon class="btn btn-outline-info" icon="fluent:edit-24-regular"></iconify-icon></a>
-      <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger" icon="icon-park-solid:delete"></iconify-icon></a></td>
-      `;
+      <td><a href="#" title="Editar" onclick="carregarDadosDoMedicamentoParaEdicao(${medicamento.id})">
+      <iconify-icon class="btn btn-outline-info" icon="fluent:edit-24-regular"></iconify-icon></a>
+      <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger" icon="icon-park-solid:delete"></iconify-icon></a></td>`;
       tbody.appendChild(row);
     });
   })
@@ -61,14 +60,9 @@ function carregarMedicamentos() {
   });
 }
 
-// Chame a função para carregar os medicamentos quando a página carregar
 document.addEventListener('DOMContentLoaded', carregarMedicamentos);
 
-// Função para carregar dados do medicamento para o modal de edição
 function carregarDadosDoMedicamentoParaEdicao(medicamentoId) {
-  // Aqui você deve fazer uma solicitação ao backend para obter os dados do medicamento com base no ID
-  // e preencher os campos do formulário de edição com esses dados
-  // Exemplo de como você pode fazer isso com fetch:
   fetch(`http://localhost:8088/api/v5/pesquisar-medicamento/${medicamentoId}`)
   .then(response => response.json())
   .then(data => {
