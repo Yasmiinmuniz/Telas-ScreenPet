@@ -10,9 +10,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/medication.css">
-    <link rel="stylesheet" href="../style/navbar.css">
-
+        <link rel="stylesheet" href="../style/medication.css">
+        <link rel="stylesheet" href="../style/navbar.css">
     <title>Medicamentos</title>
 </head>
 
@@ -32,43 +31,35 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="./home.html">
+                            <a class="nav-link" href="/home_screen/home_screen.html">
                                 <iconify-icon class="sidebar-icon" icon="clarity:home-solid"></iconify-icon>
                                 Início
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./tutor.html">
+                            <a class="nav-link" href="/tutor_screen/recipeScreen.html">
                                 <iconify-icon class="sidebar-icon" icon="mdi:account"></iconify-icon>
                                 Tutores
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pet.html">
+                            <a class="nav-link" href="/pet_screen/pet_screen.html">
                                 <iconify-icon class="sidebar-icon" icon="mdi:paw"></iconify-icon>
                                 Pets
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./vaccine.html">
+                            <a class="nav-link" href="/vaccine_screen/vaccine_screen.html">
                                 <iconify-icon class="sidebar-icon" icon="healthicons:syringe-vaccine"></iconify-icon>
                                 Vacinas
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./medication.html">
+                            <a class="nav-link" href="/medication_screen/medicationScreen.html">
                                 <iconify-icon class="sidebar-icon" icon="mdi:pill"></iconify-icon>
                                 Medicamentos
                             </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="./query.html">
-                                <iconify-icon  class="sidebar-icon" icon="clarity:clipboard-solid"></iconify-icon>
-                                Consulta
-                            </a>
-                        </li>
-
                         <li class="drop_user d-flex flex-fill nav-item">
                             <iconify-icon class="icon_person" icon="ic:round-person" flip="horizontal"></iconify-icon>
                             <div class="nav-item dropdown">
@@ -79,9 +70,9 @@
                                 <div class="dropdown-menu" style="background-color: #A97F95; position:absolute;"
                                     aria-labelledby="navbarDropdown">
                                     
-                                    <a class="dropdown-item" style="margin-top: 15px;" href="./user.html">Configurações</a>
+                                    <a class="dropdown-item" style="margin-top: 15px;" href="/user_screen/userScreen.html">Configurações</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="./login.html">Sair</a>
+                                    <a class="dropdown-item" href="/login_forgotPassword_screen/HTML/login.html">Sair</a>
                                 </div>
                             </div>
                         </li>
@@ -90,9 +81,58 @@
             </div>
         </nav>
 
+        <!-- Modal de Edição de Medicamento -->
+<div class="modal fade" id="ModalEditarMedicamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header btn-cor_principal">
+                <h5 class="modal-title" id="ModalEditarMedicamentoTitle">Editar Medicamento</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="background-image: url(wallpaper.png);">
+                <form id="edit-form">
+                    <div class="form-row pb-3">
+                        <div class="col-md-6">
+                            <label for="edit-name">Nome</label>
+                            <input type="text" class="form-control input-form" id="edit-name" placeholder="Digite o nome" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="edit-type">Tipo</label>
+                            <input type="text" class="form-control input-form" id="edit-type" placeholder="Digite qual o tipo" required>
+                        </div>
+                    </div>
+                    <div class="form-row pb-3">
+                        <div class="col-md-6 pb-3">
+                            <label for="edit-dosage">Dosagem</label>
+                            <input type="text" class="form-control input-form" id="edit-dosage" placeholder="Digite a dosagem" required>
+                        </div> 
+                        <div class="col-md-6 pb-3">
+                            <label for="edit-activeCompound">Composto ativo</label>
+                            <input type="text" class="form-control input-form" id="edit-activeCompound" placeholder="Digite os componentes" required>
+                        </div>
+                    </div>
+                    <h5>Comentários</h5>
+                    <div class="col-12">
+                        <label for="edit-comments">Comentários</label>
+                        <input type="text" class="form-control input-form" id="edit-comments" placeholder="Faça um comentário" required>
+                    </div>
+                    <br>
+                    <!-- Botão de envio -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary" id="save-edited-medicamento">Salvar Edição</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <!-- Cadastrar Medicamento -->
-        <div class="modal fade" id="ModalMedicamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true">
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" id="registerMedicament" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header btn-cor_principal">
@@ -102,46 +142,47 @@
                         </button>
                     </div>
                     <div class="modal-body" style="background-image: url(../images/wallpaper.png);">
-                        <form>
+                        <form id="form">
                             <div class="form-row pb-3">
                                 <div class="col-md-6">
-                                    <label for="nome">Nome</label>
-                                    <input type="text" class="form-control input-form" id="nome" placeholder="Digite o nome"
+                                    <label for="name">Nome</label>
+                                    <input type="text" class="form-control input-form" id="name" class="name" placeholder="Digite o nome"
                                         required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="type">Tipo</label>
-                                    <input type="text" class="form-control input-form" id="type" placeholder="Digite qual o tipo" required>
+                                    <input type="text" class="form-control input-form" id="type" class="type" placeholder="Digite qual o tipo" required>
                                 </div>
                             </div>
 
                             <div class="form-row pb-3">
                                 <div class="col-md-6 pb-3">
                                     <label for="dosage">Dosagem</label>
-                                    <input type="text" class="form-control input-form" id="dosage" placeholder="Digite a dosagem"
+                                    <input type="text" class="form-control input-form" id="dosage" class="dosage" placeholder="Digite a dosagem"
                                         required>
                                 </div> 
                                 <div class="col-md-6 pb-3">
-                                    <label for="activeCompound">Componentes</label>
-                                    <input type="text" class="form-control input-form" id="activeCompound" placeholder="Digite os componentes"
+                                    <label for="activeCompound">Composto ativo</label>
+                                    <input type="text" class="form-control input-form" class="activeCompound" id="activeCompound" placeholder="Digite os componentes"
                                         required>
                                 </div>
+
+                                <br>
+                                <h5>Comentários</h5>
+                                <div class="col-12">
+                                <label for="comments">Comentários</label>
+                                    <input type="text" class="form-control input-form" class="comments" id="comments" placeholder="Faça um comentário"
+                                        required>
+                                </div>
+                                <br>
                             </div>
                                                  
-                            <br>
-                            <h5>Comentários</h5>
-                            <div class="col-12">
-                                <textarea class="form-control input-form" id="comments" rows="3"
-                                    placeholder="Faça um comentário"></textarea>
-                            </div>
-
-                            <br>
+                            
                             <!-- Botão de envio -->
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                                <button type="button" class="register-button">Cadastrar</button>
+                                <button type="submit" id="register-button">Cadastrar</button>
                             </div>
-
                         </form>
                     </div>
                 </div>
@@ -166,12 +207,12 @@
                     <div class="search-container col-md-6">
                         <div class="input-group">
                             <div class="input-group-append">
-                                <label class="label-pesquisa" type="button">Buscar</label>
+                                <label class="label-pesquisa" id="button" type="submit">Buscar</label>
                             </div>
-                            <input type="text" class="form-control" id="searchInput"
-                                placeholder="Pesquisar Vacinas" onkeyup="searchTable()">
-                            <div class="input-group-prepend">
-                            </div>
+                            <iconify-icon class="gala_search" icon="gala:search"></iconify-icon>
+                            <input type="text" class="form-control input-form" id="searchInput" placeholder="Pesquisar Medicamentos"
+                                onkeyup="searchTable()">
+                                
                         </div>
                     </div>
                     
@@ -180,16 +221,15 @@
                         <thead>
                             <tr class="cabecalho">
                                 <th scope="col">Medicação</th>
-                                <th scope="col">Aplicação</th>
                                 <th scope="col">Tipo</th>
-                                <th scope="col">Pet</th>
-                            
+                                <th scope="col">Dosagem</th>
+                                <th scope="col">Composto Ativo</th>
                                 <th scope="col">Ações</th>
                             </tr>
                         </thead>
                         <tbody>
 
-                            <tr class="corpo">
+                            <tr class="corpo" id="resultado">
                                 <td>Ivermectina</td>
                                 <td>01/01/2023</td>
                                 <td>antiparasitário</td>
@@ -202,18 +242,18 @@
                                 </td>
                             </tr>
                             <tr class="corpo">
-                                <td>Amoxicilina</td>
+                                <td>Amoxicilina</td id="resultado">
                                 <td>26/08/2023</td>
                                 <td>infecções bacterianas</td>
                                 <td>marfin</td>
                                 <td>
-                                    <a href="#" title="Editar/vizualizar"><iconify-icon class="btn btn-outline-info"
+                                    <a href="#" title="Editar/vizualizar"><iconify-icon class="btn btn-outline-info btn-editar-medicamento"
                                             icon="fluent:edit-24-regular"></iconify-icon></a>
                                     <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger"
                                             icon="icon-park-solid:delete"></iconify-icon></a>
                                 </td>
                             </tr>
-                            <tr class="corpo">
+                            <tr class="corpo" id="resultado">
                                 <td>Metacam (Meloxicam)</td>
                                 <td>08/08/2023</td>
                                 <td> anti-inflamatório</td>
@@ -236,7 +276,6 @@
         </div>
     </div>
 
-    <script src="../assets/medication.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -248,7 +287,39 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-    
+    <script>
+        function searchTable() {
+            var input, filter, table, tr, td, i, txtValue, found;
+            input = document.getElementById("searchInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("userTable");
+            tr = table.getElementsByTagName("tr");
+            found = false;
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0]; // Altere para o índice da coluna que deseja pesquisar
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                        found = true;
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+
+            // Exibir mensagem quando não houver correspondentes
+            var noResultsMessage = document.getElementById("noResultsMessage");
+            if (found) {
+                noResultsMessage.style.display = "none";
+            } else {
+                noResultsMessage.style.display = "block";
+            }
+            
+        }
+    </script>
+    <script src="conectionBack.js"></script>
 </body>
 
 </html>
