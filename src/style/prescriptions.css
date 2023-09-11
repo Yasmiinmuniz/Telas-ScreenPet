@@ -94,16 +94,27 @@
 }
 
 .register-button {
-    border: none;
-    background-color: #6B3E5B;
-    color: #fff;
-    padding: 8px;
-    border-radius: 5px;
+    position: absolute;
+    right: 118px; /* Ajuste para posicionar o botão 10px mais para a esquerda */
+    top: calc(100% + 10px); /* Ajuste para posicionar o botão 10px mais para baixo */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    width: 20%;
+    border-radius: 15px;
+    font-weight: 40%;
+    background-color: #9F5C86;
+    color: #ffffff;
+    padding: 10px;
     cursor: pointer;
+    margin-top: 10px;
+    border: 0px;
 }
 
+
+
+
+
 .register-button:hover {
-    background-color: #6B3E5B;
+    background-color: #271520;
 }
 
 .modal-footer{
@@ -124,26 +135,32 @@
     background-color:  #C68EAA;
     border-radius: 5px;
     height: 35px;
+    border: 0;
 }
 .form-posology{
     width: 100%;
     background-color:  #C68EAA;
     border-radius: 5px;
     height: 35px;
+    border: 0px;
 }
-.form-via{
-    width: 100px;
-    background-color:  #C68EAA;
-    border-radius: 5px;
-    height: 35px;
+
+.form-via {
+    width: 300px; /* Aumente o valor da largura conforme necessário */
+    background-color: #C68EAA;
+    border-radius: 10px;
+    height: 38px;
     justify-content: center;
+    border: 0px;
 }
+
 .form-qtd{
     width: 100px;
     background-color:  #C68EAA;
     border-radius: 5px;
     height: 35px;
     justify-content: center;
+    border: 0px;
 }
 
 .container-farmacy-via-quantity{

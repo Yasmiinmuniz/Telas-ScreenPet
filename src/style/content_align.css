@@ -5,7 +5,6 @@
 }
 
 body {
-    background-image: url("../IMG/wallpaper.png") !important;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;

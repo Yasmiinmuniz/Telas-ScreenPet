@@ -10,8 +10,8 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/medication.css">
     <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="../style/medication.css">
 
     <title>Medicamentos</title>
 </head>
@@ -20,76 +20,79 @@
 
     <div class="vh-100">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+        <section>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
                 <a class="navbar-brand logo-container" href="#">
-                    <img class="logo" src="../images/screen_pet.png" alt="Logo">
+                  <img class="logo" src="../images/screen_pet.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./home.html">
-                                <iconify-icon class="sidebar-icon" icon="clarity:home-solid"></iconify-icon>
-                                Início
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./tutor.html">
-                                <iconify-icon class="sidebar-icon" icon="mdi:account"></iconify-icon>
-                                Tutores
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pet.html">
-                                <iconify-icon class="sidebar-icon" icon="mdi:paw"></iconify-icon>
-                                Pets
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./vaccine.html">
-                                <iconify-icon class="sidebar-icon" icon="healthicons:syringe-vaccine"></iconify-icon>
-                                Vacinas
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./medication.html">
-                                <iconify-icon class="sidebar-icon" icon="mdi:pill"></iconify-icon>
-                                Medicamentos
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="./query.html">
-                                <iconify-icon  class="sidebar-icon" icon="clarity:clipboard-solid"></iconify-icon>
-                                Consulta
-                            </a>
-                        </li>
-
-                        <li class="drop_user d-flex flex-fill nav-item">
-                            <iconify-icon class="icon_person" icon="ic:round-person" flip="horizontal"></iconify-icon>
-                            <div class="nav-item dropdown">
-                                <a class="nav-user dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Usuário
-                                </a>
-                                <div class="dropdown-menu" style="background-color: #A97F95; position:absolute;"
-                                    aria-labelledby="navbarDropdown">
-                                    
-                                    <a class="dropdown-item" style="margin-top: 15px;" href="./user.html">Configurações</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="./login.html">Sair</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="./home.html">
+                        <iconify-icon class="sidebar-icon" icon="clarity:home-solid"></iconify-icon>
+                        Início
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./tutor.html">
+                        <iconify-icon class="sidebar-icon" icon="mdi:account"></iconify-icon>
+                        Tutores
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pet.html">
+                        <iconify-icon class="sidebar-icon" icon="mdi:paw"></iconify-icon>
+                        Pets
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./vaccine.html">
+                        <iconify-icon class="sidebar-icon" icon="healthicons:syringe-vaccine"></iconify-icon>
+                        Vacinas
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./medication.html">
+                        <iconify-icon class="sidebar-icon" icon="mdi:pill"></iconify-icon>
+                        Medicamentos
+                      </a>
+                    </li>
+        
+                    <li class="nav-item">
+                      <a class="nav-link" href="./query.html">
+                        <iconify-icon class="sidebar-icon" icon="clarity:clipboard-solid"></iconify-icon>
+                        Consulta
+                      </a>
+                    </li>
+        
+                    <li class="drop_user d-flex flex-fill nav-item">
+                      <iconify-icon class="icon_person" icon="ic:round-person" flip="horizontal"></iconify-icon>
+                      <div class="nav-item dropdown">
+                        <a class="nav-user dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                          aria-haspopup="true" aria-expanded="false">
+                          Usuário
+                        </a>
+                        <div class="dropdown-menu" style="background-color: #A97F95; position:absolute;"
+                          aria-labelledby="navbarDropdown">
+        
+                          <a class="dropdown-item" style="margin-top: 15px;"
+                            href="./user.html">Configurações</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="./login.html">Sair</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-        </nav>
-
+              </div>
+            </nav>
+          </section>
+        
 <!-- Cadastrar Medicamento -->
         <div class="modal fade" id="ModalMedicamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
             aria-hidden="true">

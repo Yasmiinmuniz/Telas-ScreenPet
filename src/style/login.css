@@ -3,7 +3,7 @@
 
 /* Definindo o estilo para o elemento <body> da página */
 body {
-  background-image: url("../"); 
+  background-image: url("../images/wallpaper.png"); 
   background-repeat: no-repeat;
   background-size: cover;
 }
