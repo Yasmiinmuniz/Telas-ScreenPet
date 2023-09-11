@@ -29,7 +29,8 @@ form.addEventListener("submit", async function (event) {
     });
 
     const result = await response.json();
-    console.log(result);
+    console.log("Medicamento cadastrado com sucesso.");
+      window.location.reload();
   } catch (error) {
     console.error(error);
   }
@@ -51,7 +52,7 @@ function carregarMedicamentos() {
       <td>${medicamento.activeCompound}</td>
       <td><a href="#" title="Editar" onclick="carregarDadosDoMedicamentoParaEdicao(${medicamento.id})">
       <iconify-icon class="btn btn-outline-info" icon="fluent:edit-24-regular"></iconify-icon></a>
-      <a href="#" title="Remover"><iconify-icon class="btn btn-outline-danger" icon="icon-park-solid:delete"></iconify-icon></a></td>`;
+      <a href="#" title="Remover" onclick="deleteMedicamento(${medicamento.id})"><iconify-icon class="btn btn-outline-danger" icon="icon-park-solid:delete"></iconify-icon></a></td>`;
       tbody.appendChild(row);
     });
   })
@@ -74,5 +75,23 @@ function carregarDadosDoMedicamentoParaEdicao(medicamentoId) {
   })
   .catch(error => {
     console.error('Erro ao carregar dados do medicamento para edição:', error);
+  });
+}
+
+function deleteMedicamento(medicamentoId) {
+  const url = `http://localhost:8088/api/v5/deletar-medicamento/${medicamentoId}`;
+  fetch(url, {
+    method: "DELETE",
+  })
+  .then((response) => {
+    if (response.status === 200) {
+      console.log("Medicamento removido com sucesso.");
+      window.location.reload();
+    } else {
+      console.error("Erro ao remover medicamento.");
+    }
+  })
+  .catch((error) => {
+    console.error("Erro ao remover medicamento:", error);
   });
 }
