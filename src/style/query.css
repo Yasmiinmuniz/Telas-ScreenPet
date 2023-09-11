@@ -23,7 +23,7 @@
 
 /* Estilize os campos quando estiverem em foco */
 .exam-inputs input:focus {
-    background-color: #9F5C86 /* Altere a cor de fundo ao focar no campo */
+    background-color: #C68EAA /* Altere a cor de fundo ao focar no campo */
 }
 
 .input-form input {
@@ -43,7 +43,7 @@
 
 /* Estilize os campos quando estiverem em foco */
 .input-form input:focus {
-    background-color: #9F5C86; /* Altere a cor de fundo ao focar no campo */
+    background-color: #C68EAA; /* Altere a cor de fundo ao focar no campo */
 }
 
 /* Estilize a bolinha */
@@ -71,7 +71,7 @@ input[type="date"] {
 
 /* Estilize o campo de médico quando estiver em foco */
 #doctorName:focus {
-    background-color: #9F5C86 /* Altere a cor de fundo ao focar no campo */
+    background-color: #C68EAA /* Altere a cor de fundo ao focar no campo */
 }
 
 .return-inputs{
@@ -114,26 +114,36 @@ input[type="date"] {
     margin-top: 15px; /* Adicione uma margem superior maior para separar as caixas */
 }
 
-/* Adicione esta parte ao seu arquivo de estilo CSS existente */
 .access {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    margin-top: 20px; /* Espaçamento acima dos botões */
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adicione uma margem inferior de 20px */
 }
 
-.add-button button{
-    background-color:#9F5C86; /* Cor de fundo  */
+
+.prescriptions-button {
+    text-align: right;}
+
+.prescriptions-button .button {
+    background-color: #9F5C86;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 20px; /* Bordas arredondadas */
-    padding: 10px 20px; /* Espaçamento interno dos botões */
+    border-radius: 20px;
     margin: 0;
     cursor: pointer;
     font-size: inherit;
-    color: white; /* Cor do texto branca */
     text-decoration: none;
-    display: inline-block; /* Impede o sublinhado de link */
-    transition: background-color 0.3s; /* Efeito de transição suave */
-    width: 180px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 250px;
+    text-align: center;
+}
+
+.prescriptions-button button:hover {
+    background-color: #C68EAA;
 }
 
 .save-button button{
@@ -147,6 +157,7 @@ input[type="date"] {
     color: white; /* Cor do texto branca */
     text-decoration: none;
     display: inline-block; /* Impede o sublinhado de link */
+    font-weight: bold;
     transition: background-color 0.3s; /* Efeito de transição suave */
     width: 180px;
 }
@@ -162,19 +173,18 @@ input[type="date"] {
     color: white; /* Cor do texto branca */
     text-decoration: none;
     display: inline-block; /* Impede o sublinhado de link */
+    font-weight: bold;
     transition: background-color 0.3s; /* Efeito de transição suave */
     width: 180px;
 }
 .save-button a,
-.cancel-button a,
-.add-button {
+.cancel-button a {
     color: white; /* Cor do texto branca */
     text-decoration: none; /* Remove o sublinhado */
 }
 
 .save-button,
-.cancel-button
-.add-button {
+.cancel-button {
     margin: 0 10px; /* Espaçamento horizontal entre os botões */
 }
 
@@ -198,7 +208,7 @@ input[type="date"] {
     display: inline-block;
     width: 18px;
     height: 18px;
-    border: 2px solid #9F5C86;
+    border: 2px solid #C68EAA;
     border-radius: 50%;
     margin-right: 5px;
     position: relative;
@@ -209,7 +219,7 @@ input[type="date"] {
     display: block;
     width: 17px;
     height: 17px;
-    background-color: #9F5C86;
+    background-color: #C68EAA;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -231,7 +241,7 @@ input[type="date"] {
 }
 .form-qtd{
     width: 100px;
-    background-color:  #26ac1f;
+    background-color:  #C68EAA;
     border-radius: 5px;
     height: 35px;
     justify-content: center;
