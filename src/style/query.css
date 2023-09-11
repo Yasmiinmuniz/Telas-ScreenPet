@@ -15,7 +15,7 @@
 .exam-inputs input {
     border: none; /* Remova a borda padrão */
     border-radius: 10px; /* Faça as bordas arredondadas */
-    background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
+    background-color: #C68EAA; /* Defina a cor de fundo roxa */
     width:100%;
     padding: 5px; /* Adicione um espaçamento para separar o texto da barrinha */
     color: #271520; /* Defina a cor do texto para branco para melhor contraste */
@@ -23,16 +23,18 @@
 
 /* Estilize os campos quando estiverem em foco */
 .exam-inputs input:focus {
-    background-color: rgba(198, 142, 170, 1); /* Altere a cor de fundo ao focar no campo */
+    background-color: #9F5C86 /* Altere a cor de fundo ao focar no campo */
 }
 
 .input-form input {
-    border: none; /* Remova a borda padrão */
-    border-radius: 10px; /* Faça as bordas arredondadas */
-    background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
-    padding: 5px; /* Adicione um espaçamento para separar o texto da barrinha */
-    color: #271520; /* Defina a cor do texto para branco para melhor contraste */
+    border: none;
+    border-radius: 24px;
+    background-color: #C68EAA;
+    padding: 7px;
+    color: #271520;
+    width: 300px; /* Adicione a largura de 30px */
 }
+
 
 .input-form{
     display: flex;
@@ -41,19 +43,19 @@
 
 /* Estilize os campos quando estiverem em foco */
 .input-form input:focus {
-    background-color: rgba(198, 142, 170, 1); /* Altere a cor de fundo ao focar no campo */
+    background-color: #9F5C86; /* Altere a cor de fundo ao focar no campo */
 }
 
 /* Estilize a bolinha */
 input[type="radio"]:checked + input[type="radio"]::before {
-    background-color: rgba(198, 142, 170, 1); /* Cor da bolinha */
+    background-color: #C68EAA; /* Cor da bolinha */
 }
 
 /* Estilize o calendário */
 input[type="date"] {
     border: none; /* Remova a borda padrão */
     border-radius: 10px; /* Faça as bordas arredondadas */
-    background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
+    background-color: #C68EAA; /* Defina a cor de fundo roxa */
     padding: 5px; /* Adicione um espaçamento para separar o texto da bolinha */
     color: #525252; /* Defina a cor do texto para branco para melhor contraste */
 }
@@ -62,14 +64,14 @@ input[type="date"] {
 #doctorName {
     border: none; /* Remova a borda padrão */
     border-radius: 10px; /* Faça as bordas arredondadas */
-    background-color: rgba(198, 142, 170, 0.75); /* Defina a cor de fundo roxa */
+    background-color: #C68EAA; /* Defina a cor de fundo roxa */
     padding: 5px; /* Adicione um espaçamento para separar o texto da barrinha */
     color: #525252; /* Defina a cor do texto para branco para melhor contraste */
 }
 
 /* Estilize o campo de médico quando estiver em foco */
 #doctorName:focus {
-    background-color: rgba(198, 142, 170, 1); /* Altere a cor de fundo ao focar no campo */
+    background-color: #9F5C86 /* Altere a cor de fundo ao focar no campo */
 }
 
 .return-inputs{
@@ -119,8 +121,23 @@ input[type="date"] {
     margin-top: 20px; /* Espaçamento acima dos botões */
 }
 
+.add-button button{
+    background-color:#9F5C86; /* Cor de fundo  */
+    border: none;
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno dos botões */
+    margin: 0;
+    cursor: pointer;
+    font-size: inherit;
+    color: white; /* Cor do texto branca */
+    text-decoration: none;
+    display: inline-block; /* Impede o sublinhado de link */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+    width: 180px;
+}
+
 .save-button button{
-    background-color:#6B3E5B; /* Cor de fundo  */
+    background-color:#9F5C86; /* Cor de fundo  */
     border: none;
     border-radius: 20px; /* Bordas arredondadas */
     padding: 10px 20px; /* Espaçamento interno dos botões */
@@ -149,13 +166,15 @@ input[type="date"] {
     width: 180px;
 }
 .save-button a,
-.cancel-button a {
+.cancel-button a,
+.add-button {
     color: white; /* Cor do texto branca */
     text-decoration: none; /* Remove o sublinhado */
 }
 
 .save-button,
-.cancel-button {
+.cancel-button
+.add-button {
     margin: 0 10px; /* Espaçamento horizontal entre os botões */
 }
 
@@ -179,7 +198,7 @@ input[type="date"] {
     display: inline-block;
     width: 18px;
     height: 18px;
-    border: 2px solid #6B3E5B;
+    border: 2px solid #9F5C86;
     border-radius: 50%;
     margin-right: 5px;
     position: relative;
@@ -190,7 +209,7 @@ input[type="date"] {
     display: block;
     width: 17px;
     height: 17px;
-    background-color: #6B3E5B;
+    background-color: #9F5C86;
     border-radius: 50%;
     position: absolute;
     top: 50%;

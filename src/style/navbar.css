@@ -10,12 +10,12 @@
 }
 
 body {
-    font-family: 'poppins', sans-serif  !important;
-    background-image: url("../navbar_screen/wallpaper.png"); 
+    font-family: 'Poppins', sans-serif, !important;
+    background-image: url("../images/wallpaper.png") !important;
     background-color: #E9E9E9;
-    overflow-x: hidden  !important;
-    padding-top: 75px  !important;
-  }
+    overflow-x: hidden !important;
+    padding-top: 75px !important;
+}
 
 .logo{
     width: 200px !important;

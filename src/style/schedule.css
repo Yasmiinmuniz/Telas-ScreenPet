@@ -7,7 +7,7 @@
     box-sizing: border-box;
   }
   
-  body {
+  .body {
     position: relative;
     min-height: 100vh;
     display: flex;
@@ -41,7 +41,7 @@
     justify-content: space-between;
     color: #271520;
     border-radius: 5px;
-    background-image: url("../navbar_screen/wallpaper.png");
+    background-image: url("../images/wallpaper.png");
   }
   /* set after behind the main element */
   .calendar::before,
